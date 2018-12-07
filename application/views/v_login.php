@@ -10,8 +10,8 @@
         <meta name="date"                   content="Febrero 15, 2018"/>
         <meta name="language"               content="es">
         <meta name="theme-color"            content="#000000">
-    	<title>HPE Intel NSX - SDDC</title>
-    	<link rel="shortcut icon" href="<?php echo RUTA_IMG?>logo/favicon.ico">
+    	<title>Benitan</title>
+    	<link rel="shortcut icon" href="<?php echo RUTA_IMG?>logo/favicon.png">
     	<link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>toaster/toastr.min.css?v=<?php echo time();?>">
         <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>bootstrap-select/css/bootstrap-select.min.css?v=<?php echo time();?>">
         <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>bootstrap/css/bootstrap.min.css?v=<?php echo time();?>">
@@ -25,11 +25,11 @@
     <body>
         <div class="js-header">
             <div class="js-header--left">
-                <img src="<?php echo RUTA_IMG?>logo/hpe-intel.png">
+                <img src="<?php echo RUTA_IMG?>logo/benitan.png">
             </div>
         </div>
-        <section class="js-section js-height">
-            <div class="js-fondo"></div>
+        <section class="js-section jm-height">
+            <div class="jm-fondo"></div>
             <div class="js-container js-flex">
                 <div class="js-login">
                     <h2>Acceso a la Herramienta</h2>
@@ -48,7 +48,7 @@
                         </label>
                     </div>
                     <div class="col-xs-12 p-0">
-                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button js-button--login" onclick="ingresar()">Login</button>
+                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect jm-button jm-button--login" onclick="ingresar()">Login</button>
                     </div>
                 </div>
             </div>

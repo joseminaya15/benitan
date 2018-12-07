@@ -1,9 +1,9 @@
 var $win = $(window);
 $win.scroll(function () {
 	if ($win.scrollTop() > 45) {
-		$(".js-header").addClass("navbarcolor");
+		$(".navbar-default").addClass("navbarcolor");
 	} else {
-		$(".js-header").removeClass("navbarcolor");
+		$(".navbar-default").removeClass("navbarcolor");
 	}
 });
 $('a.link[href^="#"]').click(function(e) {

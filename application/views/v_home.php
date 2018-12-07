@@ -10,20 +10,20 @@
     <meta name="date"                   content="August 01, 2018"/>
     <meta name="language"               content="es">
     <meta name="theme-color"            content="#000000">
-	<title>HPE Intel NSX - SDDC</title>
-    <link rel="shortcut icon" href="<?php echo RUTA_IMG?>logo/favicon.ico">
+	<title>Benitan</title>
+    <link rel="shortcut icon" href="<?php echo RUTA_IMG?>logo/favicon.png">
     <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>toaster/toastr.css?v=<?php echo time();?>">
     <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>mdl/material.min.css?v=<?php echo time();?>">
     <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>bootstrap-select/css/bootstrap-select.min.css?v=<?php echo time();?>">
     <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>bootstrap/css/bootstrap.min.css?v=<?php echo time();?>">
     <link rel="stylesheet"    href="<?php echo RUTA_FONTS?>material-icons.css?v=<?php echo time();?>">
-    <link rel="stylesheet"    href="<?php echo RUTA_FONTS?>metric.css?v=<?php echo time();?>">
+    <link rel="stylesheet"    href="<?php echo RUTA_FONTS?>futura.css?v=<?php echo time();?>">
     <link rel="stylesheet"    href="<?php echo RUTA_CSS?>m-p.min.css?v=<?php echo time();?>">
     <link rel="stylesheet"    href="<?php echo RUTA_CSS?>style.css?v=<?php echo time();?>">
 </head>
 <body>
     <nav class="navbar navbar-default">
-        <div class="container-fluid">
+        <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
             <span class="sr-only">Toggle navigation</span>
@@ -31,7 +31,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Brand</a>
+            <a class="navbar-brand" href="#"><img src="<?php echo RUTA_IMG?>logo/benitan.png"><span>Benitan</span></a>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
@@ -46,120 +46,182 @@
         </div>
         </div>
     </nav>
-    <!-- <div class="js-header">
-        <div class="js-header--container">
-            <div class="js-header--left">
-                <img src="<?php echo RUTA_IMG?>logo/hpe-intel.png">
+    <section id="home" class="jm-relative">
+        <div class="jm-fondo"></div>
+        <div class="jm-container">
+            <div class="js-home jm-flex">
+                <div class="js-contenido">
+                    <h2>Your time is precious</h2>
+                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect jm-button jm-button--default">THE STORY</button>
+                </div>
             </div>
         </div>
-    </div> -->
-    <section id="home">
-        <div class="js-fondo"></div>
-        <div class="js-container">
-            <div class="js-home js-flex">
+    </section>
+    <section class="jm-white text-right">
+        <div class="jm-container">
+            <p class="jm-autor">Bahia Palace, Morocco</p>
+        </div>
+    </section>
+    <section class="jm-relative">
+        <div class="jm-fondo time"></div>
+        <div class="jm-container">
+            <div class="js-home jm-flex time">
                 <div class="js-contenido">
-                    <h2>Gane agilidad con un datacenter definido por software - SDDC</h2>
-                    <div class="js-xeon">
-                        <img src="<?php echo RUTA_IMG?>logo/xeon-logo.png">
-                        <p>Familia de procesadores escalables Intel&reg; Xeon&reg;</p>
+                    <h2>The timepiece that doesn’t tell time</h2>
+                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect jm-button jm-button--default">LEARN MORE</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="jm-white text-right">
+        <div class="jm-container">
+            <p class="jm-autor">Somewhere in the Sahara</p>
+        </div>
+    </section>
+    <section class="jm-section">
+        <div class="jm-container">
+            <div class="jm-subtitle">
+                <p>The Benitan wrist-piece is our daily reminder that our time is limited. Do what makes you happy, 
+                explore, experience. Don’t waste it on your phone.</p>
+            </div>
+        </div>
+    </section>
+    <section class="jm-section">
+        <div class="jm-container">
+            <div class="jm-iconos">
+                <div class="jm-grid-4">
+                    <div class="jm-icon">
+                        <img src="<?php echo RUTA_IMG?>logo/card1.png"/>
+                        <p>Car accidents phone related<p>
+                    </div>
+                    <div class="jm-icon">
+                        <img src="<?php echo RUTA_IMG?>logo/card2.png"/>
+                        <p>50 Times you’ve checked your phone today<p>
+                    </div>
+                    <div class="jm-icon">
+                        <img src="<?php echo RUTA_IMG?>logo/card3.png"/>
+                        <p>1460 Hours Spent on your phone per year<p>
+                    </div>
+                    <div class="jm-icon">
+                        <img src="<?php echo RUTA_IMG?>logo/card4.png"/>
+                        <p>Too Many Missed Opportunies<p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section id="register" class="js-section">
-        <div class="js-container">
-            <div class="js-information">
-                <h2>Jueves 4 de Octubre, 2018</h2>
-                <h3>4:30 pm a 6:30 pm</h3>
-                <p>Tribeca, Costa Rica</p>
-                <span>Del Ceviche del Rey 2000 norte y 200 este. Casa esquinera a mano izquierda. Calle Lajas, Santa Ana, San Jose</span>
+    <section class="jm-section" id="about">
+        <div class="jm-container">
+            <div class="jm-title">
+                <h2>About Us</h2>
+                <hr>
             </div>
-            <div class="js-title">
-                <h2>Reg&iacute;strese completando el siguiente formulario</h2>
+        </div>
+    </section>
+    <section class="jm-relative">
+        <div class="jm-fondo about"></div>
+        <div class="jm-container">
+            <div class="js-home jm-flex"></div>
+        </div>
+    </section>
+    <section class="jm-white text-right">
+        <div class="jm-container">
+            <p class="jm-autor">Medina of Marrakech, Morocco</p>
+            <div class="jm-contenido">
+                <p>At Benitan we have no founders, no CEO, no CMO, or C-whatever. We are a group of techies
+                that love technology but understand the importance of setting it aside for a while and
+                living the human experience. </p>
+                <span>Let’s be Human, <br>
+                The Benitan Group</span>
             </div>
-            <div class="row">
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class="js-input">
-                        <label for="text">Nombre*</label>
-                        <input type="text" id="name">
+        </div>
+    </section>
+    <section class="jm-section" id="collection">
+        <div class="jm-container">
+            <div class="jm-title">
+                <h2>v0 Collection</h2>
+                <hr>
+            </div>
+            <div class="jm-contenido">
+                <div class="jm-grid-2">
+                    <div class="jm-collection">
+                        <img src="<?php echo RUTA_IMG?>logo/benitan1.png"/>
+                    </div>
+                    <div class="jm-collection">
+                        <img src="<?php echo RUTA_IMG?>logo/benitan2.png"/>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class="js-input">
-                        <label for="text">Apellido*</label>
-                        <input type="text" id="surname">
-                    </div>
+                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect jm-button jm-button--black">SHOP</button>
+            </div>
+        </div>
+    </section>
+    <section class="jm-section" id="contact">
+        <div class="jm-container">
+            <div class="jm-title">
+                <h2>Contact Us</h2>
+                <hr>
+            </div>
+            <div class="jm-contenido p-r-0 p-l-0">
+                <p>We are constantly looking for our followers to join our cause and participate. If you have any
+                suggestions or collaboration ideas, shoot us a message.</p>
+            </div>
+        </div>
+    </section>
+    <section class="jm-section jm-grey p-t-20 p-b-20">
+        <div class="jm-container">
+            <div class="jm-contenido p-r-0 p-l-0">
+                <div class="jm-input">
+                    <label for="name">Name (required)</label>
+                    <input type="text" class="form-control" id="name">
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class=" js-input">
-                        <label for="text">Email*</label>
-                        <input type="text" id="email" >
-                    </div>
+                <div class="jm-input">
+                    <label for="reach">How can we reach you? (required)</label>
+                    <input type="text" class="form-control" id="reach">
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class=" js-input">
-                        <label for="text">Teléfono*</label>
-                        <input type="text" id="phone">
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                     <div class=" js-input">
-                        <label for="text">Empresa*</label>
-                        <input type="text" id="company" >
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class=" js-input">
-                        <label for="text">Cargo*</label>
-                        <input type="text" id="position">
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class=" js-input">
-                        <label for="text">País*</label>
-                        <input type="text" id="country">
-                    </div>
+                <div class="jm-input">
+                    <label for="message">Message (required)</label>
+                    <textarea rows="5" type="text" class="form-control" id="message"></textarea>
                 </div>
             </div>
-            <div class="js-terminos">
-                <p>Le gustar&iacute;a recibir comunicaciones personalizadas sobre HPE y sobre productos, servicios, ofertas y eventos seleccionados de partners de HPE?</p>
-                <div class="js-radio">
-                    <label class="js-label__name">Correo electr&oacute;nico*</label>
-                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="electronico">
-                        <input type="radio" id="electronico" class="mdl-radio__button" name="options" value="1">
-                        <span class="mdl-radio__label">Si</span>
-                    </label>
-                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="noelectronico">
-                        <input type="radio" id="noelectronico" class="mdl-radio__button" name="options" value="2">
-                        <span class="mdl-radio__label">No</span>
-                    </label>
-                </div>
-                <div class="js-radio">
-                    <label class="js-label__name">Tel&eacute;fono*</label>
-                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="telefono">
-                        <input type="radio" id="telefono" class="mdl-radio__button" name="options1" value="1">
-                        <span class="mdl-radio__label">Si</span>
-                    </label>
-                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="notelefono">
-                        <input type="radio" id="notelefono" class="mdl-radio__button" name="options1" value="2">
-                        <span class="mdl-radio__label">No</span>
-                    </label>
-                </div>
-                <p>Para m&aacute;s informaci&oacute;n sobre c&oacute;mo HPE gestiona, usa y protege su informaci&oacute;n, consulte la <a href="https://www.hpe.com/lamerica/es/legal/privacy.html" target="_blank" id="">Declaraci&oacute;n de privacidad de HPE.</a> Siempre puede anular o modificar su consentimiento para recibir comunicaciones de marketing de HPE. Podr&aacute; hacerlo mediante las opciones de exclusi&oacute;n voluntaria y preferencias que se encuentran en la parte inferior de nuestras comunicaciones de marketing por correo electr&oacute;nico o bien, siguiendo el <a href="https://h41360.www4.hpe.com/unsubscribe-gp.php" target="_blank">enlace a continuaci&oacute;n.</a>Si proporcion&oacute; su n&uacute;mero de tel&eacute;fono m&oacute;vil para recibir comunicaciones de marketing, tenga en cuenta que podr&iacute;n aplicarse cargos por roaming.</p>
+        </div>
+    </section>
+    <section class="jm-section" id="shared">
+        <div class="jm-container">
+            <div class="jm-title">
+                <h2>Share with Us</h2>
+                <hr>
             </div>
-            <div class="js-section--button text-left">
-                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button js-login" onclick="sendInformation()">Enviar</button>
+            <div class="jm-contenido p-r-0 p-l-0">
+                <p>If you want us to feature your picture of your adventure with your benitan bracelet, attach your
+                image below. If we use it on our site or social media, we’ll give you a shout out and photo credit.</p>
             </div>
-            <div id="confirmation" class="js-confirmation">
-                <h2>Registro realizado correctamente. Lo esperamos</h2>
+        </div>
+    </section>
+    <section class="jm-section jm-grey p-t-20 p-b-20">
+        <div class="jm-container">
+            <div class="jm-contenido p-r-0 p-l-0">
+                <div class="jm-input">
+                    <label for="name-shared">Name (optional)</label>
+                    <input type="text" class="form-control" id="name-shared">
+                </div>
+                <div class="jm-input">
+                    <label for="location">Location (required)</label>
+                    <input type="text" class="form-control" id="location">
+                </div>
+                <div class="jm-input">
+                    <label for="social">Social Media Handle (optional)</label>
+                    <input type="text" class="form-control" id="social" placeholder="@">
+                </div>
+                <div class="jm-input">
+                    <label for="message-shared">Message (optional)</label>
+                    <textarea rows="5" type="text" class="form-control" id="message-shared"></textarea>
+                </div>
             </div>
         </div>
     </section>
     <footer>
         <div class="js-container text-center">
-            <p class="content">Intel y el logotipo de Intel son marcas comerciales de la Corporación Intel o sus filiales en los Estados Unidos o en otros países</p>
-            <p>&copy;2018 Copyright Hewlett Packard Enterprise Development LP</p>
+            <p class="content">&copy; Copyright 2018 Benitan – All Rights Reserved</p>
         </div>
     </footer>
 	<script src="<?php echo RUTA_JS?>jquery-3.2.1.min.js?v=<?php echo time();?>"></script>
