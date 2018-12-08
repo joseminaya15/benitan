@@ -10,8 +10,8 @@
         <meta name="date"                   content="January 25, 2018"/>
         <meta name="language"               content="es">
         <meta name="theme-color"            content="#000000">
-        <title>HPE Intel NSX - SDDC</title>
-        <link rel="shortcut icon" href="<?php echo RUTA_IMG?>logo/favicon.ico">
+        <title>Benitan</title>
+        <link rel="shortcut icon" href="<?php echo RUTA_IMG?>logo/favicon.png">
         <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>toaster/toastr.min.css?v=<?php echo time();?>">
         <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>bootstrap-select/css/bootstrap-select.min.css?v=<?php echo time();?>">
         <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>bootstrap/css/bootstrap.min.css?v=<?php echo time();?>">
@@ -31,26 +31,54 @@
                 <span>Benitan</span>
             </div>
             <div class="js-header--right">
-            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect button-logout" onclick="cerrarCesion()">Cerrar Sesión</button> 
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect button-logout" onclick="cerrarCesion()">Logout</button> 
             </div>
         </div>
         <section class="js-section">
             <div class="js-container m-t-50">
-                <div class="mdl-card">
-                    <div class="table-responsive">
-                        <table id="example" class="display nowrap table table-bordered table-hover dt-responsive" cellspacing="0" width="100%">
-                            <thead>
-                                <tr class="tr-header-reporte">
-                                    <th class="text-left">Name</th>
-                                    <th class="text-left">Reach</th>
-                                    <th class="text-left">Message</th>
-                                    <th class="text-center">Registration date</th>
-                                </tr>
-                            </thead>
-                            <tbody id="tablecity">
-                                <?php echo $html ?>  
-                            </tbody>
-                        </table>
+                <ul class="nav nav-tabs m-b-20" role="tablist">
+                    <li role="presentation" class="active"><a href="#contact" aria-controls="contact" role="tab" data-toggle="tab">Contact</a></li>
+                    <li role="presentation"><a href="#shared" aria-controls="shared" role="tab" data-toggle="tab">Shared</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="contact">
+                        <div class="mdl-card">
+                            <div class="table-responsive">
+                                <table id="exampleContact" class="display nowrap table table-bordered table-hover dt-responsive" cellspacing="0" width="100%">
+                                    <thead>
+                                        <tr class="tr-header-reporte">
+                                            <th class="text-left">Name</th>
+                                            <th class="text-left">Reach</th>
+                                            <th class="text-left">Message</th>
+                                            <th class="text-center">Registration date</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="tablecity">
+                                        <?php echo $html ?>  
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="shared">
+                        <div class="mdl-card">
+                            <div class="table-responsive">
+                                <table id="exampleShared" class="display nowrap table table-bordered table-hover dt-responsive" cellspacing="0" width="100%">
+                                    <thead>
+                                        <tr class="tr-header-reporte">
+                                            <th class="text-left">Name</th>
+                                            <th class="text-left">Location</th>
+                                            <th class="text-left">Social</th>
+                                            <th class="text-left">Message</th>
+                                            <th class="text-center">Registration date</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="tablecity">
+                                        <?php echo $html2 ?>  
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -76,7 +104,26 @@
         <script src="<?php echo RUTA_JS?>login.js?v=<?php echo time();?>"></script>
         <script type="text/javascript">
             $(document).ready(function() {
-                $('#example').DataTable( {
+                $('#exampleContact').DataTable( {
+                    searching : false,
+                    responsive: true,
+                    dom: 'Bfrtip',
+                    aLengthMenu : [100],
+                    buttons: [
+                        {
+                            extend:'excel',
+                            text: 'Exportar a Excel'
+                        },
+                        {
+                            extend:'print',
+                            text: 'Imprimir'
+                        }
+                    ],
+                    language : {
+                        info : "Mostrando _TOTAL_ registros",
+                    }
+                });
+                $('#exampleShared').DataTable( {
                     searching : false,
                     responsive: true,
                     dom: 'Bfrtip',

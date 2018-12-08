@@ -69,10 +69,13 @@ label
 	width 100%
 	background-color transparent
 	z-index 5
-	padding 15px 25px
+	padding 10px 25px
 	color #FFFFFF
+	height initial
 	&.js-fixed
-		background-color $color
+		background-color #E6E7E8
+		span
+			color #000000
 	img
 		width 100%
 		max-width 50px
@@ -87,10 +90,11 @@ label
 			font-size 16px
 			line-height 16px
 		img
-			&.js-partner
-				margin-right 10px
-				padding-right 10px
-				border-right 1px solid #000000
+			max-width 40px
+		span
+			font-size 24px
+			margin-left 15px
+			font-family $bold
 	.js-header--right
 		flexCenter()
 		width 100%
@@ -106,6 +110,14 @@ label
 			font-size 18px
 			font-family $medium
 			color $default
+		.mdl-button
+			text-transform initial
+			border 2px solid #000000
+			background-color #FFFFFF !important
+			color #000000 !important
+			box-shadow none !important
+			line-height 24px
+			font-family $medium
 .js-login
 	width 100%
 	max-width 400px

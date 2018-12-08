@@ -35,11 +35,11 @@
                 <div class="js-login">
                     <h2>Acceso a la Herramienta</h2>
                     <div class="col-xs-12 js-input m-0">
-                        <label for="usuario">Usuario</label>
+                        <label for="usuario">Username</label>
                         <input type="text" id="usuario" onkeyup="verificarDatos(event);">
                     </div>
                     <div class="col-xs-12 js-input m-0">
-                        <label for="password">Contrase&ntilde;a</label>
+                        <label for="password">Password</label>
                         <input type="password" id="password" onkeyup="verificarDatos(event);">
                     </div>
                     <div class="col-xs-12 js-radio">

@@ -14,7 +14,9 @@ class Admin extends CI_Controller {
     }
 	public function index(){
         $datos = $this->M_reporte->getDatosContact();
+        $datos2 = $this->M_reporte->getDatosShared();
         $html  = '';
+        $html2  = '';
         if(count($datos) == 0) {
             $html = '';
         }else {
@@ -27,7 +29,21 @@ class Admin extends CI_Controller {
                         </tr>';
             }
         }
-		$data['html'] = $html;
+        if(count($datos2) == 0) {
+            $html2 = '';
+        }else {
+            foreach ($datos2 as $key){
+                $html2 .= '<tr class="tr-cursor-pointer">
+                            <td class="text-left">'.$key->name.'</td>
+                            <td class="text-left">'.$key->location.'</td>
+                            <td class="text-left">'.$key->social.'</td>
+                            <td class="text-left">'.$key->message.'</td>
+                            <td class="text-center">'.$key->fecha.'</td>
+                        </tr>';
+            }
+        }
+        $data['html'] = $html;
+        $data['html2'] = $html2;
 		$this->load->view('v_admin', $data);
 	}
     function cerrarCesion(){

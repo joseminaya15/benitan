@@ -105,6 +105,7 @@ strong
 	.mdl-button
 		width 100%
 		max-width 200px
+		margin 10px 0
 .jm-title
 	text-align center
 	margin 10px 0
@@ -179,9 +180,10 @@ strong
 		font-size 20px
 		font-family $bold
 		&>img
-			max-width 50px
+			max-width 40px
 		span 
 			margin-left 15px
+			font-size 24px
 .js-header
 	transitionAll()
 	position fixed
@@ -192,8 +194,6 @@ strong
 	color #FFFFFF
 	height 75px
 	background-color rgba(0, 0, 0, .4)
-	&.js-fixed
-		background-color $color
 	.js-header--container
 		flexCenter()
 		width 100%
@@ -417,6 +417,8 @@ footer
 		font-size 16px
 		line-height 20px			
 /*CLASES PROYECTO*/
+.table-responsive
+	border none
 .jm-redes
 	margin-top 20px
 	ul
@@ -553,4 +555,10 @@ footer
 			p
 				font-size 16px
 				line-height 16px
+	.jm-input
+		.mdl-button
+			max-width 100%
+	.dataTables_info
+	.dataTables_paginate
+		margin 20px 0 !important
 			
