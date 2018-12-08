@@ -36,7 +36,7 @@
         </div>
         <section class="js-section">
             <div class="js-container m-t-50">
-                <ul class="nav nav-tabs m-b-20" role="tablist">
+                <ul class="nav nav-tabs m-b-20 jm-tabs" role="tablist">
                     <li role="presentation" class="active"><a href="#contact" aria-controls="contact" role="tab" data-toggle="tab">Contact</a></li>
                     <li role="presentation"><a href="#shared" aria-controls="shared" role="tab" data-toggle="tab">Shared</a></li>
                 </ul>
