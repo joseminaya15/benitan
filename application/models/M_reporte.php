@@ -5,8 +5,13 @@ class M_reporte extends  CI_Model{
         parent::__construct();
     }
 
-    function getDatosUser() {
-        $sql = "SELECT * FROM participante";
+    function getDatosContact() {
+        $sql = "SELECT * FROM contact";
+        $result = $this->db->query($sql);
+        return $result->result();
+    }
+    function getDatosShared() {
+        $sql = "SELECT * FROM shared";
         $result = $this->db->query($sql);
         return $result->result();
     }

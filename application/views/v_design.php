@@ -17,6 +17,7 @@
     <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>bootstrap-select/css/bootstrap-select.min.css?v=<?php echo time();?>">
     <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>bootstrap/css/bootstrap.min.css?v=<?php echo time();?>">
     <link rel="stylesheet"    href="<?php echo RUTA_FONTS?>material-icons.css?v=<?php echo time();?>">
+    <link rel="stylesheet"    href="<?php echo RUTA_FONTS?>font-awesome.min.css?v=<?php echo time();?>">
     <link rel="stylesheet"    href="<?php echo RUTA_FONTS?>futura.css?v=<?php echo time();?>">
     <link rel="stylesheet"    href="<?php echo RUTA_CSS?>m-p.min.css?v=<?php echo time();?>">
     <link rel="stylesheet"    href="<?php echo RUTA_CSS?>style.css?v=<?php echo time();?>">
@@ -31,17 +32,17 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#"><img src="<?php echo RUTA_IMG?>logo/benitan.png"><span>Benitan</span></a>
+            <a class="navbar-brand" href="Home"><img src="<?php echo RUTA_IMG?>logo/benitan.png"><span>Benitan</span></a>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="Home">Home</a></li>
                 <li><a href="Story">The Story</a></li>
-                <li><a href="#">About us</a></li>
+                <li><a href="Home#about">About us</a></li>
                 <li><a href="Design">The design</a></li>
                 <li><a href="Collection">Collection</a></li>
-                <li><a href="#">Share with us</a></li>
-                <li><a href="#">Contact us</a></li>
+                <li><a href="Home#shared">Share with us</a></li>
+                <li><a href="Home#contact">Contact us</a></li>
             </ul>
         </div>
         </div>
@@ -56,7 +57,7 @@
     </section>
     <section class="jm-white text-right">
         <div class="jm-container">
-            <div class="jm-contenido">
+            <div class="jm-contenido scrollflow -slide-top -opacity">
                 <img src="<?php echo RUTA_IMG?>fondo/hourglass.jpg" />
                 <p>Look around you. How many people do you see looking down at their phones? Technology
                 is useful, just don’t spend all your time glued to your phone. </p>
@@ -71,7 +72,7 @@
     </section>
     <section class="jm-white text-right">
         <div class="jm-container">
-            <div class="jm-contenido">
+            <div class="jm-contenido scrollflow -slide-top -opacity">
                 <p>The Benitan bracelet is designed to serve as a reminder that the time we have is limited. Don't
                 spend it staring at screen. Instead, go out, explore, meet new people, discover new places.</p>
                 <img src="<?php echo RUTA_IMG?>logo/benitan_discover.png" />
@@ -82,10 +83,18 @@
     <footer>
         <div class="js-container text-center">
             <p class="content">&copy; Copyright 2018 Benitan – All Rights Reserved</p>
+            <div class="jm-redes">
+                <ul>
+                    <li><a href="https://web.facebook.com/benitanweb?_rdc=1&_rdr" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCY0175T5TjckuXn2rSxUuIg" target="_blank"><i class="fa fa-youtube"></i></a></li>
+                    <li><a href="https://www.instagram.com/benitanweb/?zr_mid=W_gRrQAEAAGF1beghemjMHT4VeX_&ctime=1544204691&rtime=1544204689&hrc=1" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                </ul>
+            </div>
         </div>
     </footer>
 	<script src="<?php echo RUTA_JS?>jquery-3.2.1.min.js?v=<?php echo time();?>"></script>
     <script src="<?php echo RUTA_JS?>jquery-1.11.2.min.js?v=<?php echo time();?>"></script>
+    <script src="<?php echo RUTA_JS?>js-scroll-flow.js?v=<?php echo time();?>"></script>
     <script src="<?php echo RUTA_PLUGINS?>bootstrap/js/bootstrap.min.js?v=<?php echo time();?>"></script>
     <script src="<?php echo RUTA_PLUGINS?>bootstrap-select/js/bootstrap-select.min.js?v=<?php echo time();?>"></script>
     <script src="<?php echo RUTA_PLUGINS?>bootstrap-select/js/i18n/defaults-es_ES.min.js?v=<?php echo time();?>"></script>

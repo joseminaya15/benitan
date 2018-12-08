@@ -17,48 +17,39 @@
         <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>bootstrap/css/bootstrap.min.css?v=<?php echo time();?>">
         <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>mdl/material.min.css?v=<?php echo time();?>">
         <link rel="stylesheet"    href="<?php echo RUTA_FONTS?>material-icons.css?v=<?php echo time();?>">
-        <link rel="stylesheet"    href="<?php echo RUTA_FONTS?>metric.css?v=<?php echo time();?>">
+        <link rel="stylesheet"    href="<?php echo RUTA_FONTS?>futura.css?v=<?php echo time();?>">
         <link rel="stylesheet"    href="<?php echo RUTA_CSS?>m-p.min.css?v=<?php echo time();?>">
         <link rel="stylesheet"    href="<?php echo RUTA_CSS?>style.css?v=<?php echo time();?>">
         <link rel="stylesheet"    href="https://cdn.datatables.net/1.10.16/css/dataTables.bootstrap.min.css">
         <link rel="stylesheet"    href="https://cdn.datatables.net/buttons/1.5.1/css/buttons.bootstrap.min.css">
         <link rel="stylesheet"    href="<?php echo RUTA_CSS?>admin.css?v=<?php echo time();?>">
-        <style type="text/css">
-            .js-container--admin{
-                max-width: 1350px
-            }
-        </style>
     </head>
     <body>
         <div class="js-header js-fixed">
             <div class="js-header--left">
-                <img src="<?php echo RUTA_IMG?>logo/hpe-intel.png">
+                <img src="<?php echo RUTA_IMG?>logo/benitan.png">
+                <span>Benitan</span>
+            </div>
+            <div class="js-header--right">
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect button-logout" onclick="cerrarCesion()">Cerrar Sesión</button> 
             </div>
         </div>
-        <section id="principal" class="js-section js-section--admin">
-            <div id="content" class="js-container js-container--admin">
-                <div class="col-xs-12 text-right p-0">
-                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect button-logout" onclick="cerrarCesion()">Cerrar Sesión</button> 
-                </div>
+        <section class="js-section">
+            <div class="js-container m-t-50">
                 <div class="mdl-card">
                     <div class="table-responsive">
                         <table id="example" class="display nowrap table table-bordered table-hover dt-responsive" cellspacing="0" width="100%">
                             <thead>
                                 <tr class="tr-header-reporte">
-                                    <th class="text-left">Nombre</th>
-                                    <th class="text-left">Email</th>
-                                    <th class="text-right">Tel&eacute;fono</th>
-                                    <th class="text-left">Empresa</th>
-                                    <th class="text-left">Cargo</th>
-                                    <th class="text-left">País</th>
-                                    <th class="text-left">Fecha de registro</th>
-                                    <th class="text-left">Información por correo</th>
-                                    <th class="text-left">Información por teléfono</th>
+                                    <th class="text-left">Name</th>
+                                    <th class="text-left">Reach</th>
+                                    <th class="text-left">Message</th>
+                                    <th class="text-center">Registration date</th>
                                 </tr>
                             </thead>
-                          <tbody id="tablecity">
-                              <?php echo $html ?>  
-                          </tbody>
+                            <tbody id="tablecity">
+                                <?php echo $html ?>  
+                            </tbody>
                         </table>
                     </div>
                 </div>

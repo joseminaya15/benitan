@@ -17,94 +17,47 @@ class Home extends CI_Controller {
 		$this->load->view('v_home');
 	}
 
-	function register(){
+	function registerContact(){
 		$data['error'] = EXIT_ERROR;
       	$data['msj']   = null;
 		try {
-			$name           = $this->input->post('Name');
-			$surname 		= $this->input->post('Surname');
-			$correo 		= $this->input->post('Email');
-			$telefono	    = $this->input->post('Phone');
-			$empresa 		= $this->input->post('Company');
-			$cargo 		    = $this->input->post('Position');
-			$pais	 		= $this->input->post('Country');
-			$flg_correo     = $this->input->post('Comucorreo');
-			$flg_telefono   = $this->input->post('Comutelefono');
-			$existe         = $this->M_Datos->existCorreo($correo);
-			$fecha          = date('Y-m-d');
-			if(count($existe) != 0) {
-				$data['msj']   = 'Correo ya registrado';
-			}
-			else{
-				$insertParticipante = array('nombre'    => $name,
-										   'apellido'   => $surname,
-										   'email' 	    => $correo,
-										   'telefono' 	=> $telefono,
-										   'empresa'    => $empresa,
-										   'cargo'      => $cargo,
-										   'pais'       => $pais,
-										   'fecha'      => $fecha,
-										   'flg_correo'   => $flg_correo,
-										   'flg_telefono' => $flg_telefono);
-				$datoInsert  = $this->M_Datos->insertarDatos($insertParticipante,'participante');
-				$this->sendConfirmation($correo);
-	          	$data['msj']   = $datoInsert['msj'];
-	          	$data['error'] = $datoInsert['error'];
-	          }
+			$name              = $this->input->post('NameContact');
+			$reach 	           = $this->input->post('ReachContact');
+			$message           = $this->input->post('MessageContact');
+			$fecha             = date('Y-m-d');
+			$insertUserContact = array('name'     => $name,
+									   'reach'    => $reach,
+									   'message'  => $message,
+									   'fecha'    => $fecha);
+			$datoInsert  = $this->M_Datos->insertarContact($insertUserContact,'contact');
+			$data['msj']   = $datoInsert['msj'];
+			$data['error'] = $datoInsert['error'];
 		} catch(Exception $ex) {
 			$data['msj'] = $ex->getMessage();
 		}
       	echo json_encode($data);
 	}
-	function sendConfirmation($correo){
+
+	function registerShared(){
 		$data['error'] = EXIT_ERROR;
-		$data['msj']   = null;
-		try {  
-			$this->load->library("email");
-			$configGmail = array('protocol'  => 'smtp',
-			                     'smtp_host' => 'smtpout.secureserver.net',
-			                     'smtp_port' => 3535,
-			                     'smtp_user' => 'info@marketinghpe.com',
-			                     'smtp_pass' => 'h#120918Pe',
-			                     'mailtype'  => 'html',
-			                     'charset'   => 'utf-8',
-			                     'newline'   => "\r\n");    
-			$this->email->initialize($configGmail);
-			$this->email->from('info@marketinghpe.com');
-			$this->email->to($correo);
-			// $this->email->to('jose.minayac15@gmail.com');
-			$this->email->subject('HPE - Gracias por registrarse en nuestro evento.');
-			$texto = '<!DOCTYPE html>
-<html>
-    <body>
-        <table width="500px" cellpadding="0" cellspacing="0" align="center" style="border: solid 1px #ccc;">
-            <tr>
-                <td>
-                    <table width="400" cellspacing="0" cellpadding="0" border="0" align="center" style="padding: 30px 0">
-                        <tr>
-                            <td style="text-align: center;padding: 0;margin: 0;padding-top: 20px; padding-bottom: 10px"><font style="font-family: arial;color: #000000;font-size: 18px;font-weight: 600">Muchas gracias por confirmar <br>
-                          su participaci&oacute;n. Su registro <br>
-                          se realiz&oacute; con éxito.</font></td>
-                        </tr>
-								                                        <tr>
-                            <td style="text-align: center;padding: 0;margin: 0;padding-bottom: 20px"><font style="font-family: arial;color: #000000;font-size: 16px;font-weight: 200">Lo esperamos en el entrenamiento.</font></td>
-                        </tr>
-                        <tr>
-                            <td align="left"><font style="font-family: arial;color: #757575;font-size: 12px;">Intel y el logotipo de Intel son marcas comerciales de la Corporaci&oacute;n Intel o sus filiales en los Estados Unidos o en otros pa&iacute;ses<br>
-                            &copy;Copyright 2018 Hewlett Packard Enterprise Development LP</font></td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-        </table>
-    </body>
-</html>';
-			$this->email->message($texto);
-			$this->email->send();
-			$data['error'] = EXIT_SUCCESS;
-		}catch (Exception $e){
-			$data['msj'] = $e->getMessage();
+      	$data['msj']   = null;
+		try {
+			$name             = $this->input->post('NameShared');
+			$location 		  = $this->input->post('LocationShared');
+			$social 		  = $this->input->post('SocialShared');
+			$message 		  = $this->input->post('MessageShared');
+			$fecha            = date('Y-m-d');
+			$insertUserShared = array('name'     => $name,
+									  'location' => $location,
+									  'social' 	 => $social,
+									  'message'  => $message,
+									  'fecha'    => $fecha);
+			$datoInsert  = $this->M_Datos->insertarShared($insertUserShared,'shared');
+			$data['msj']   = $datoInsert['msj'];
+			$data['error'] = $datoInsert['error'];
+		} catch(Exception $ex) {
+			$data['msj'] = $ex->getMessage();
 		}
-		return json_encode(array_map('utf8_encode', $data));
+      	echo json_encode($data);
 	}
 }

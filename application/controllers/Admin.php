@@ -13,26 +13,17 @@ class Admin extends CI_Controller {
         $this->output->set_header('Pragma: no-cache');
     }
 	public function index(){
-        $datos = $this->M_reporte->getDatosUser();
+        $datos = $this->M_reporte->getDatosContact();
         $html  = '';
-        $flg_correo = '';
-        $flg_telefono = '';
         if(count($datos) == 0) {
             $html = '';
         }else {
             foreach ($datos as $key){
-                $flg_correo   = $key->flg_correo == 1 ? 'Si' : 'No';
-                $flg_telefono = $key->flg_telefono == 1 ? 'Si' : 'No';
                 $html .= '<tr class="tr-cursor-pointer">
-                            <td class="text-left">'.$key->nombre.' '.$key->apellido.'</td>
-                            <td class="text-left">'.$key->email.'</td>
-                            <td class="text-right">'.$key->telefono.'</td>
-                            <td class="text-left">'.$key->empresa.'</td>
-                            <td class="text-left">'.$key->cargo.'</td>
-                            <td class="text-left">'.$key->pais.'</td>
-                            <td class="text-left">'.$key->fecha.'</td>
-                            <td class="text-left">'.$flg_correo.'</td>
-                            <td class="text-left">'.$flg_telefono.'</td>
+                            <td class="text-left">'.$key->name.'</td>
+                            <td class="text-left">'.$key->reach.'</td>
+                            <td class="text-left">'.$key->message.'</td>
+                            <td class="text-center">'.$key->fecha.'</td>
                         </tr>';
             }
         }

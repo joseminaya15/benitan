@@ -18,80 +18,33 @@ $('a.link[href^="#"]').click(function(e) {
  		scrollTop : (y - 40)
  	}, 'slow');
 });
-function sendInformation(){
-	var name 		= $('#name').val();
-	var surname 	= $('#surname').val();
-	var email 		= $('#email').val();
-	var phone 		= $('#phone').val();
-	var company 	= $('#company').val();
-	var position 	= $('#position').val();
-	var country 	= $('#country').val();
-	var electronico   = $('#electronico').is(':checked');
-	var noelectronico = $('#noelectronico').is(':checked');
-	var telefono      = $('#telefono').is(':checked');
-	var notelefono    = $('#notelefono').is(':checked');
-	if(name == null || name == '') {
-		msj('error', 'Nombre debe completarse');
+function sendContact(){
+	var nameContact    = $('#nameContact').val();
+	var reachContact   = $('#reachContact').val();
+	var messageContact = $('#messageContact').val();
+	if(nameContact == null || nameContact == '') {
+		msj('error', 'Name must be completed');
 		return;
 	}
-	if(surname == null || surname == '') {
-		msj('error', 'Apellido debe completarse');
+	if(reachContact == null || reachContact == '') {
+		msj('error', 'Reach must be completed');
 		return;
 	}
-	if(email == null || email == '') {
-		msj('error', 'Email debe completarse');
+	if(messageContact == null || messageContact == '') {
+		msj('error', 'Message must be completed');
 		return;
-	}
-	if(!validateEmail(email)){
-		msj('error', 'El formato de email es incorrecto');
-		return;
-	}
-	if(phone == null || phone == '') {
-		msj('error', 'Teléfono debe completarse');
-		return;
-	}
-	if(company == null || company == '') {
-		msj('error', 'Empresa debe completarse');
-		return;
-	}
-	if(position == null || position == '') {
-		msj('error', 'Cargo debe completarse');
-		return;
-	}
-	if(country == null || country == '') {
-		msj('error', 'País debe completarse');
-		return;
-	}
-	if(electronico == true){
-		comucorreo = 1;
-	}else{
-		comucorreo = 2;
-	}
-	if(telefono == true){
-		comutelefono = 1;
-	}else{
-		comutelefono = 2;
 	}
 	$.ajax({
-		data : {Name	    : name,
-				Surname	    : surname,
-				Email 	    : email,
-				Phone	    : phone,
-				Company	    : company,
-				Position    : position,
-				Country	    : country,
-				Comucorreo   : comucorreo,
-			    Comutelefono : comutelefono},
-		url  : 'home/register',
+		data : {NameContact	    : nameContact,
+			    ReachContact	: reachContact,
+			    MessageContact 	: messageContact},
+		url  : 'home/registerContact',
 		type : 'POST'
 	}).done(function(data){
 		try {
 			data = JSON.parse(data);
 			if(data.error == 0){
-				$('.js-input').find('input').val('');
-				$('.js-input').find('select').val('0');
-				$('.js-input').find('select').selectpicker('refresh');
-				$('#confirmation').addClass('aparecer');
+				$('.jm-input').find('.form-control').val('');
 				msj('success', data.msj);
         	}else{
         		msj('error', data.msj);
@@ -102,9 +55,48 @@ function sendInformation(){
 		}
 	});
 }
-function validateEmail(email){
-    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    return re.test(email);
+function sendShared(){
+	var nameShared     = $('#nameShared').val();
+	var locationShared = $('#locationShared').val();
+	var socialShared   = $('#socialShared').val();
+	var messageShared  = $('#messageShared').val();
+	if(nameShared == null || nameShared == '') {
+		msj('error', 'Name must be completed');
+		return;
+	}
+	if(locationShared == null || locationShared == '') {
+		msj('error', 'Location must be completed');
+		return;
+	}
+	if(socialShared == null || socialShared == '') {
+		msj('error', 'Social must be completed');
+		return;
+	}
+	if(messageShared == null || messageShared == '') {
+		msj('error', 'Message must be completed');
+		return;
+	}
+	$.ajax({
+		data : {NameShared	    : nameShared,
+			    LocationShared	: locationShared,
+				SocialShared 	: socialShared,
+				MessageShared 	: messageShared},
+		url  : 'home/registerShared',
+		type : 'POST'
+	}).done(function(data){
+		try {
+			data = JSON.parse(data);
+			if(data.error == 0){
+				$('.jm-input').find('.form-control').val('');
+				msj('success', data.msj);
+        	}else{
+        		msj('error', data.msj);
+        		return;
+        	}
+		} catch (err) {
+			msj('error', err.message);
+		}
+	});
 }
 function verificarDatos(e) {
 	if(e.keyCode === 13){

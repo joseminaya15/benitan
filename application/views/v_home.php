@@ -17,6 +17,7 @@
     <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>bootstrap-select/css/bootstrap-select.min.css?v=<?php echo time();?>">
     <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>bootstrap/css/bootstrap.min.css?v=<?php echo time();?>">
     <link rel="stylesheet"    href="<?php echo RUTA_FONTS?>material-icons.css?v=<?php echo time();?>">
+    <link rel="stylesheet"    href="<?php echo RUTA_FONTS?>font-awesome.min.css?v=<?php echo time();?>">
     <link rel="stylesheet"    href="<?php echo RUTA_FONTS?>futura.css?v=<?php echo time();?>">
     <link rel="stylesheet"    href="<?php echo RUTA_CSS?>m-p.min.css?v=<?php echo time();?>">
     <link rel="stylesheet"    href="<?php echo RUTA_CSS?>style.css?v=<?php echo time();?>">
@@ -31,17 +32,17 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#"><img src="<?php echo RUTA_IMG?>logo/benitan.png"><span>Benitan</span></a>
+            <a class="navbar-brand link" href="#home"><img src="<?php echo RUTA_IMG?>logo/benitan.png"><span>Benitan</span></a>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="Home">Home</a></li>
+                <li><a class="link" href="#home">Home</a></li>
                 <li><a href="Story">The Story</a></li>
-                <li><a href="#">About us</a></li>
+                <li><a class="link" href="#about">About us</a></li>
                 <li><a href="Design">The design</a></li>
                 <li><a href="Collection">Collection</a></li>
-                <li><a href="#">Share with us</a></li>
-                <li><a href="#">Contact us</a></li>
+                <li><a class="link" href="#shared">Share with us</a></li>
+                <li><a class="link" href="#contact">Contact us</a></li>
             </ul>
         </div>
         </div>
@@ -50,7 +51,7 @@
         <div class="jm-fondo"></div>
         <div class="jm-container">
             <div class="js-home jm-flex">
-                <div class="js-contenido">
+                <div class="js-contenido scrollflow -slide-top -opacity">
                     <h2>Your time is precious</h2>
                     <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect jm-button jm-button--default">THE STORY</button>
                 </div>
@@ -66,7 +67,7 @@
         <div class="jm-fondo time"></div>
         <div class="jm-container">
             <div class="js-home jm-flex time">
-                <div class="js-contenido">
+                <div class="js-contenido scrollflow -slide-top -opacity">
                     <h2>The timepiece that doesn’t tell time</h2>
                     <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect jm-button jm-button--default">LEARN MORE</button>
                 </div>
@@ -80,7 +81,7 @@
     </section>
     <section class="jm-section">
         <div class="jm-container">
-            <div class="jm-subtitle">
+            <div class="jm-subtitle scrollflow -slide-top -opacity">
                 <p>The Benitan wrist-piece is our daily reminder that our time is limited. Do what makes you happy, 
                 explore, experience. Don’t waste it on your phone.</p>
             </div>
@@ -90,19 +91,19 @@
         <div class="jm-container">
             <div class="jm-iconos">
                 <div class="jm-grid-4">
-                    <div class="jm-icon">
+                    <div class="jm-icon scrollflow -slide-top -opacity">
                         <img src="<?php echo RUTA_IMG?>logo/card1.png"/>
                         <p>Car accidents phone related<p>
                     </div>
-                    <div class="jm-icon">
+                    <div class="jm-icon scrollflow -slide-top -opacity">
                         <img src="<?php echo RUTA_IMG?>logo/card2.png"/>
                         <p>50 Times you’ve checked your phone today<p>
                     </div>
-                    <div class="jm-icon">
+                    <div class="jm-icon scrollflow -slide-top -opacity">
                         <img src="<?php echo RUTA_IMG?>logo/card3.png"/>
                         <p>1460 Hours Spent on your phone per year<p>
                     </div>
-                    <div class="jm-icon">
+                    <div class="jm-icon scrollflow -slide-top -opacity">
                         <img src="<?php echo RUTA_IMG?>logo/card4.png"/>
                         <p>Too Many Missed Opportunies<p>
                     </div>
@@ -127,7 +128,7 @@
     <section class="jm-white text-right">
         <div class="jm-container">
             <p class="jm-autor">Medina of Marrakech, Morocco</p>
-            <div class="jm-contenido">
+            <div class="jm-contenido scrollflow -slide-top -opacity">
                 <p>At Benitan we have no founders, no CEO, no CMO, or C-whatever. We are a group of techies
                 that love technology but understand the importance of setting it aside for a while and
                 living the human experience. </p>
@@ -144,10 +145,10 @@
             </div>
             <div class="jm-contenido">
                 <div class="jm-grid-2">
-                    <div class="jm-collection">
+                    <div class="jm-collection scrollflow -slide-top -opacity">
                         <img src="<?php echo RUTA_IMG?>logo/benitan1.png"/>
                     </div>
-                    <div class="jm-collection">
+                    <div class="jm-collection scrollflow -slide-top -opacity">
                         <img src="<?php echo RUTA_IMG?>logo/benitan2.png"/>
                     </div>
                 </div>
@@ -161,7 +162,7 @@
                 <h2>Contact Us</h2>
                 <hr>
             </div>
-            <div class="jm-contenido p-r-0 p-l-0">
+            <div class="jm-contenido p-r-0 p-l-0 scrollflow -slide-top -opacity">
                 <p>We are constantly looking for our followers to join our cause and participate. If you have any
                 suggestions or collaboration ideas, shoot us a message.</p>
             </div>
@@ -171,16 +172,19 @@
         <div class="jm-container">
             <div class="jm-contenido p-r-0 p-l-0">
                 <div class="jm-input">
-                    <label for="name">Name (required)</label>
-                    <input type="text" class="form-control" id="name">
+                    <label for="nameContact">Name (required)</label>
+                    <input type="text" class="form-control" id="nameContact">
                 </div>
                 <div class="jm-input">
-                    <label for="reach">How can we reach you? (required)</label>
-                    <input type="text" class="form-control" id="reach">
+                    <label for="reachContact">How can we reach you? (required)</label>
+                    <input type="text" class="form-control" id="reachContact">
                 </div>
                 <div class="jm-input">
-                    <label for="message">Message (required)</label>
-                    <textarea rows="5" type="text" class="form-control" id="message"></textarea>
+                    <label for="messageContact">Message (required)</label>
+                    <textarea rows="5" type="text" class="form-control" id="messageContact"></textarea>
+                </div>
+                <div class="jm-input text-right">
+                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect jm-button" onclick="sendContact()">Send</button>
                 </div>
             </div>
         </div>
@@ -191,7 +195,7 @@
                 <h2>Share with Us</h2>
                 <hr>
             </div>
-            <div class="jm-contenido p-r-0 p-l-0">
+            <div class="jm-contenido p-r-0 p-l-0 scrollflow -slide-top -opacity">
                 <p>If you want us to feature your picture of your adventure with your benitan bracelet, attach your
                 image below. If we use it on our site or social media, we’ll give you a shout out and photo credit.</p>
             </div>
@@ -201,20 +205,23 @@
         <div class="jm-container">
             <div class="jm-contenido p-r-0 p-l-0">
                 <div class="jm-input">
-                    <label for="name-shared">Name (optional)</label>
-                    <input type="text" class="form-control" id="name-shared">
+                    <label for="nameShared">Name (optional)</label>
+                    <input type="text" class="form-control" id="nameShared">
                 </div>
                 <div class="jm-input">
-                    <label for="location">Location (required)</label>
-                    <input type="text" class="form-control" id="location">
+                    <label for="locationShared">Location (required)</label>
+                    <input type="text" class="form-control" id="locationShared">
                 </div>
                 <div class="jm-input">
-                    <label for="social">Social Media Handle (optional)</label>
-                    <input type="text" class="form-control" id="social" placeholder="@">
+                    <label for="socialShared">Social Media Handle (optional)</label>
+                    <input type="text" class="form-control" id="socialShared" placeholder="@">
                 </div>
                 <div class="jm-input">
-                    <label for="message-shared">Message (optional)</label>
-                    <textarea rows="5" type="text" class="form-control" id="message-shared"></textarea>
+                    <label for="messageShared">Message (optional)</label>
+                    <textarea rows="5" type="text" class="form-control" id="messageShared"></textarea>
+                </div>
+                <div class="jm-input text-right">
+                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect jm-button" onclick="sendShared()">Send</button>
                 </div>
             </div>
         </div>
@@ -222,10 +229,18 @@
     <footer>
         <div class="js-container text-center">
             <p class="content">&copy; Copyright 2018 Benitan – All Rights Reserved</p>
+            <div class="jm-redes">
+                <ul>
+                    <li><a href="https://web.facebook.com/benitanweb?_rdc=1&_rdr" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCY0175T5TjckuXn2rSxUuIg" target="_blank"><i class="fa fa-youtube"></i></a></li>
+                    <li><a href="https://www.instagram.com/benitanweb/?zr_mid=W_gRrQAEAAGF1beghemjMHT4VeX_&ctime=1544204691&rtime=1544204689&hrc=1" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                </ul>
+            </div>
         </div>
     </footer>
 	<script src="<?php echo RUTA_JS?>jquery-3.2.1.min.js?v=<?php echo time();?>"></script>
     <script src="<?php echo RUTA_JS?>jquery-1.11.2.min.js?v=<?php echo time();?>"></script>
+    <script src="<?php echo RUTA_JS?>js-scroll-flow.js?v=<?php echo time();?>"></script>
     <script src="<?php echo RUTA_PLUGINS?>bootstrap/js/bootstrap.min.js?v=<?php echo time();?>"></script>
     <script src="<?php echo RUTA_PLUGINS?>bootstrap-select/js/bootstrap-select.min.js?v=<?php echo time();?>"></script>
     <script src="<?php echo RUTA_PLUGINS?>bootstrap-select/js/i18n/defaults-es_ES.min.js?v=<?php echo time();?>"></script>
