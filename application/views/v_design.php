@@ -72,6 +72,11 @@
     </section>
     <section class="jm-white text-right">
         <div class="jm-container">
+            <p class="jm-autor">Playa Rosada - Nosara, Costa Rica</p>
+        </div>
+    </section>
+    <section class="jm-white text-right">
+        <div class="jm-container">
             <div class="jm-contenido scrollflow -slide-top -opacity">
                 <p>The Benitan bracelet is designed to serve as a reminder that the time we have is limited. Don't
                 spend it staring at screen. Instead, go out, explore, meet new people, discover new places.</p>
