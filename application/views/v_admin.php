@@ -31,7 +31,7 @@
                 <span>Benitan</span>
             </div>
             <div class="js-header--right">
-            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect button-logout" onclick="cerrarCesion()">Logout</button> 
+                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect button-logout" onclick="cerrarCesion()">Logout</button> 
             </div>
         </div>
         <section class="js-section">

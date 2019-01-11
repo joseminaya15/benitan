@@ -36,13 +36,13 @@
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-                <li><a class="link" href="#home">Home</a></li>
-                <li><a href="Story">The Story</a></li>
-                <li><a class="link" href="#about">About us</a></li>
-                <li><a href="Design">The design</a></li>
-                <li><a href="Collection">Collection</a></li>
-                <li><a class="link" href="#shared">Share with us</a></li>
-                <li><a class="link" href="#contact">Contact us</a></li>
+                <li><a class="link" href="#belief">BELIEF</a></li>
+                <li><a class="link" href="#design">DESIGN</a></li>
+                <li><a class="link" href="#collection">COLLECTION</a></li>
+                <li><a class="link" href="#effort">EFFORT</a></li>
+                <li><a class="link" href="#about">ABOUT US</a></li>
+                <!-- <li><a class="link" href="#shared">Share with us</a></li> -->
+                <li><a class="link" href="#contact">CONTACT</a></li>
             </ul>
         </div>
         </div>
@@ -50,65 +50,95 @@
     <section id="home" class="jm-relative">
         <div class="jm-fondo"></div>
         <div class="jm-container">
-            <div class="js-home jm-flex">
+            <div class="js-home jm-flex start">
                 <div class="js-contenido scrollflow -slide-top -opacity">
-                    <h2>Your time is precious</h2>
-                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect jm-button jm-button--default">THE STORY</button>
+                    <h3>Your time is <strong>precious</strong></h3>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="jm-white text-right">
-        <div class="jm-container">
-            <p class="jm-autor">Bahia Palace, Morocco</p>
-        </div>
-    </section>
-    <section class="jm-relative">
-        <div class="jm-fondo time"></div>
-        <div class="jm-container">
-            <div class="js-home jm-flex time">
-                <div class="js-contenido scrollflow -slide-top -opacity">
-                    <h2>The timepiece that doesn’t tell time</h2>
-                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect jm-button jm-button--default">LEARN MORE</button>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="jm-white text-right">
-        <div class="jm-container">
-            <p class="jm-autor">Somewhere in the Sahara</p>
         </div>
     </section>
     <section class="jm-section">
         <div class="jm-container">
             <div class="jm-subtitle scrollflow -slide-top -opacity">
-                <p>The Benitan wrist-piece is our daily reminder that our time is limited. Do what makes you happy, 
-                explore, experience. Don’t waste it on your phone.</p>
+                <p>The Benitan wrist-piece is our daily reminder that <strong>our time is limited.</strong> Do what makes you <strong>happy, 
+                explore, experience.</strong> Don’t waste it on your phone.</p>
             </div>
-        </div>
-    </section>
-    <section class="jm-section">
-        <div class="jm-container">
             <div class="jm-iconos">
                 <div class="jm-grid-4">
                     <div class="jm-icon scrollflow -slide-top -opacity">
-                        <img src="<?php echo RUTA_IMG?>logo/card1.png"/>
-                        <p>Car accidents phone related<p>
+                        <div class="jm-img">
+                            <img src="<?php echo RUTA_IMG?>logo/card1.png"/>
+                        </div>
+                        <p><strong>25% | 1 out of 4</strong> car accidents phone related<p>
                     </div>
                     <div class="jm-icon scrollflow -slide-top -opacity">
-                        <img src="<?php echo RUTA_IMG?>logo/card2.png"/>
-                        <p>50 Times you’ve checked your phone today<p>
+                        <div class="jm-img">
+                            <img src="<?php echo RUTA_IMG?>logo/card2.png"/>
+                        </div>
+                        <p><strong>50 Times</strong> you’ve checked your phone today<p>
                     </div>
                     <div class="jm-icon scrollflow -slide-top -opacity">
-                        <img src="<?php echo RUTA_IMG?>logo/card3.png"/>
-                        <p>1460 Hours Spent on your phone per year<p>
+                        <div class="jm-img">
+                            <img src="<?php echo RUTA_IMG?>logo/card3.png"/>
+                        </div>
+                        <p><strong>1460 Hours</strong> Spent on your phone per year<p>
                     </div>
                     <div class="jm-icon scrollflow -slide-top -opacity">
-                        <img src="<?php echo RUTA_IMG?>logo/card4.png"/>
-                        <p>Too Many Missed Opportunies<p>
+                        <div class="jm-img">
+                            <img src="<?php echo RUTA_IMG?>logo/card4.png"/>
+                        </div>
+                        <p>Too Many <strong>Missed Opportunies</strong><p>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+    <section class="jm-section" id="news">
+        <div class="jm-container">
+            <div class="jm-grid-3">
+                <div class="jm-news scrollflow -slide-top -opacity">
+                    <div class="jm-img">
+                        <img src="<?php echo RUTA_IMG?>news/new1.png"/>
+                    </div>
+                    <div class="jm-new__contenido">
+                        <h2>The timepiece that doesn't tell time</h2>
+                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect jm-button jm-button--white">LEARN MORE</button>
+                    </div>
+                </div>
+                <div class="jm-news scrollflow -slide-top -opacity">
+                    <div class="jm-img">
+                        <img src="<?php echo RUTA_IMG?>news/new2.png"/>
+                    </div>
+                    <div class="jm-new__contenido">
+                        <h2>The timepiece that doesn't tell time</h2>
+                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect jm-button jm-button--white">LEARN MORE</button>
+                    </div>
+                </div>
+                <div class="jm-news scrollflow -slide-top -opacity">
+                    <div class="jm-img">
+                        <img src="<?php echo RUTA_IMG?>news/new3.png"/>
+                    </div>
+                    <div class="jm-new__contenido">
+                        <h2>The timepiece that doesn't tell time</h2>
+                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect jm-button jm-button--white">LEARN MORE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="jm-section" id="belief">
+        <div class="jm-container">
+
+        </div>
+    </section>
+    <section class="jm-section" id="design">
+        <div class="jm-container">
+            
+        </div>
+    </section>
+    <section class="jm-section" id="about">
+        <div class="jm-container">
+            
         </div>
     </section>
     <section class="jm-section" id="about">
@@ -168,7 +198,7 @@
             </div>
         </div>
     </section>
-    <section class="jm-section jm-grey p-t-20 p-b-20">
+    <section class="jm-section p-t-20 p-b-20">
         <div class="jm-container">
             <div class="jm-contenido p-r-0 p-l-0">
                 <div class="jm-input">
@@ -189,7 +219,7 @@
             </div>
         </div>
     </section>
-    <section class="jm-section" id="shared">
+    <!-- <section class="jm-section" id="shared">
         <div class="jm-container">
             <div class="jm-title">
                 <h2>Share with Us</h2>
@@ -225,16 +255,28 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <footer>
-        <div class="js-container text-center">
-            <p class="content">&copy; Copyright 2018 Benitan – All Rights Reserved</p>
-            <div class="jm-redes">
-                <ul>
-                    <li><a href="https://web.facebook.com/benitanweb?_rdc=1&_rdr" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="https://www.youtube.com/channel/UCY0175T5TjckuXn2rSxUuIg" target="_blank"><i class="fa fa-youtube"></i></a></li>
-                    <li><a href="https://www.instagram.com/benitanweb/?zr_mid=W_gRrQAEAAGF1beghemjMHT4VeX_&ctime=1544204691&rtime=1544204689&hrc=1" target="_blank"><i class="fa fa-instagram"></i></a></li>
-                </ul>
+        <div class="jm-container jm-footer">
+            <div class="jm-flex--end">
+                <div class="jm-privacidad">
+                    <ul>
+                        <li><a href="" target="_blank">Benitan</a></li>
+                        <li><a href="" target="_blank">Privacy Policy</a></li>
+                        <li><a href="" target="_blank">Use Of Cookies</a></li>
+                        <li><a href="" target="_blank">Terms Of Use</a></li>
+                    </ul>
+                </div>
+                <div class="jm-redes">
+                    <ul>
+                        <li><a href="https://web.facebook.com/benitanweb?_rdc=1&_rdr" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/benitanweb/?zr_mid=W_gRrQAEAAGF1beghemjMHT4VeX_&ctime=1544204691&rtime=1544204689&hrc=1" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="https://www.youtube.com/channel/UCY0175T5TjckuXn2rSxUuIg" target="_blank"><i class="fa fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="jm-copyright">
+                <p class="content">&copy; Copyright 2018 Benitan – All Rights Reserved</p>
             </div>
         </div>
     </footer>
