@@ -126,7 +126,7 @@
             </div>
         </div>
     </section>
-    <section class="jm-section" id="belief">
+    <section class="jm-section jm-grey" id="belief">
         <div class="jm-container">
 
         </div>
@@ -141,48 +141,30 @@
             
         </div>
     </section>
-    <section class="jm-section" id="about">
-        <div class="jm-container">
-            <div class="jm-title">
-                <h2>About Us</h2>
-                <hr>
-            </div>
-        </div>
-    </section>
-    <section class="jm-relative">
-        <div class="jm-fondo about"></div>
-        <div class="jm-container">
-            <div class="js-home jm-flex"></div>
-        </div>
-    </section>
-    <section class="jm-white text-right">
-        <div class="jm-container">
-            <p class="jm-autor">Medina of Marrakech, Morocco</p>
-            <div class="jm-contenido scrollflow -slide-top -opacity">
-                <p>At Benitan we have no founders, no CEO, no CMO, or C-whatever. We are a group of techies
-                that love technology but understand the importance of setting it aside for a while and
-                living the human experience. </p>
-                <span>Let’s be Human, <br>
-                The Benitan Group</span>
-            </div>
-        </div>
-    </section>
     <section class="jm-section" id="collection">
         <div class="jm-container">
             <div class="jm-title">
-                <h2>v0 Collection</h2>
-                <hr>
+                <h2>Collection</h2>
+                <p>The timepiece that doesn't tell time</p>
             </div>
             <div class="jm-contenido">
-                <div class="jm-grid-2">
+                <div class="jm-grid-3">
                     <div class="jm-collection scrollflow -slide-top -opacity">
-                        <img src="<?php echo RUTA_IMG?>logo/benitan1.png"/>
+                        <img src="<?php echo RUTA_IMG?>collection/collection1.png"/>
+                        <h2>SILVER | BLACK</h2>
+                        <p>$00.00</p>
                     </div>
                     <div class="jm-collection scrollflow -slide-top -opacity">
-                        <img src="<?php echo RUTA_IMG?>logo/benitan2.png"/>
+                        <img src="<?php echo RUTA_IMG?>collection/collection2.png"/>
+                        <h2>GOLDEN | PINK</h2>
+                        <p>$00.00</p>
+                    </div>
+                    <div class="jm-collection scrollflow -slide-top -opacity">
+                        <img src="<?php echo RUTA_IMG?>collection/collection3.png"/>
+                        <h2>GOLDEN | WHITE</h2>
+                        <p>$00.00</p>
                     </div>
                 </div>
-                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect jm-button jm-button--black">SHOP</button>
             </div>
         </div>
     </section>
@@ -190,7 +172,6 @@
         <div class="jm-container">
             <div class="jm-title">
                 <h2>Contact Us</h2>
-                <hr>
             </div>
             <div class="jm-contenido p-r-0 p-l-0 scrollflow -slide-top -opacity">
                 <p>We are constantly looking for our followers to join our cause and participate. If you have any
