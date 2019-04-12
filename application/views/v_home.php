@@ -18,7 +18,7 @@
     <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>bootstrap/css/bootstrap.min.css?v=<?php echo time();?>">
     <link rel="stylesheet"    href="<?php echo RUTA_FONTS?>material-icons.css?v=<?php echo time();?>">
     <link rel="stylesheet"    href="<?php echo RUTA_FONTS?>font-awesome.min.css?v=<?php echo time();?>">
-    <link rel="stylesheet"    href="<?php echo RUTA_FONTS?>futura.css?v=<?php echo time();?>">
+    <link rel="stylesheet"    href="<?php echo RUTA_FONTS?>lato.css?v=<?php echo time();?>">
     <link rel="stylesheet"    href="<?php echo RUTA_CSS?>m-p.min.css?v=<?php echo time();?>">
     <link rel="stylesheet"    href="<?php echo RUTA_CSS?>style.css?v=<?php echo time();?>">
 </head>
@@ -57,6 +57,9 @@
             </div>
         </div>
     </section>
+    <div class="jm-triangulo--home">
+        <div class="jm-triangulo"></div>
+    </div>
     <section class="jm-section">
         <div class="jm-container">
             <div class="jm-subtitle scrollflow -slide-top -opacity">
@@ -128,19 +131,72 @@
     </section>
     <section class="jm-section jm-grey" id="belief">
         <div class="jm-container">
-
+            <div class="jm-belief">
+                <div class="jm-belief__second">
+                    <h2>Belief</h2>
+                    <p>Look around you.<strong>How many people do you see looking down at their phones?</strong> Technology is useful, 
+                    just don't spend all your time glued to your phone.</p>
+                    <p><strong>Time is the most valuable asset you can possess.</strong> Each second that we should be treated 
+                    as <strong>a blessing</strong>, never taken for granted.</p>
+                </div>
+                <div class="jm-belief__first">
+                    <img src="<?php echo RUTA_IMG?>logo/belief.png"/>
+                </div>
+            </div>
+            <div class="jm-belief contrario">
+                <div class="jm-belief__second">
+                    <p>When you use a <strong>Benitan wrist piece</strong> you are committing yourself to lifestyle that causes your to look 
+                    up from your 6-inch screen phone and embrace <strong>the beautiful world we live in.</strong></p>
+                    <p>Our purpose is to motivate others to commit to put their phone down for a few everyday and enjoy <strong>a blessing</strong>, never taken for granted.</p>
+                </div>
+                <div class="jm-belief__first">
+                    <img src="<?php echo RUTA_IMG?>logo/jt.png"/>
+                </div>
+            </div>
         </div>
     </section>
-    <section class="jm-section" id="design">
+    <div class="jm-triangulo--design">
+        <div class="jm-triangulo"></div>
+    </div>
+    <section class="jm-section jm-grey--oscure" id="design">
         <div class="jm-container">
-            
+            <div class="jm-title white">
+                <h2>Design</h2>
+            </div>
+            <div class="jm-design--contenido">
+                <p class="jm-contenedor">Sand has been used as a symbol of time since the early times of human innovation in form of hourglasses.
+                 <strong>Each of our wrist piece contains sands from unique destinations from which we have traveled to and experienced peace
+                  and adventure.</strong></p>
+                <img class="benitan1" src="<?php echo RUTA_IMG?>logo/design_benitan.png" />
+                <img class="benitan2" src="<?php echo RUTA_IMG?>logo/benitan_vertical.png" />
+            </div>
+            <div class="jm-design">
+                <div class="jm-design__left">
+                    <p><strong>The Benitan wrist piece</strong> is designed to serve as a reminder that the time
+                     we have is limited. Do not spend it staring at screen. <strong>Instead, go out, explore, meet
+                      new people, discover new places.</strong></p>
+                </div>
+                <div class="jm-design__right two benitan">
+                    <img src="<?php echo RUTA_IMG?>logo/benitan1.png" />
+                    <img src="<?php echo RUTA_IMG?>logo/benitan2.png" />
+                </div>
+            </div>
+            <div class="jm-design">
+                <div class="jm-design__right one">
+                    <p><strong>Our clasp design</strong> is made to secure your wrist and stay with you on land or in water.</p>
+                </div>
+                <div class="jm-design__left two correa">
+                    <img src="<?php echo RUTA_IMG?>logo/correa1.png" />
+                    <img src="<?php echo RUTA_IMG?>logo/correa2.png" />
+                    <img src="<?php echo RUTA_IMG?>logo/correa3.png" />
+                    <img class="large" src="<?php echo RUTA_IMG?>logo/correa4.png" />
+                </div>
+            </div>
         </div>
     </section>
-    <section class="jm-section" id="about">
-        <div class="jm-container">
-            
-        </div>
-    </section>
+    <div class="jm-triangulo--collection">
+        <div class="jm-triangulo"></div>
+    </div>
     <section class="jm-section" id="collection">
         <div class="jm-container">
             <div class="jm-title">
@@ -168,34 +224,65 @@
             </div>
         </div>
     </section>
-    <section class="jm-section" id="contact">
-        <div class="jm-container">
-            <div class="jm-title">
-                <h2>Contact Us</h2>
+    <section class="jm-section p-0" id="about">
+        <div class="jm-effort">
+            <div class="jm-effort__right two">
+                <div class="jm-effort--contenido">
+                    <h2>Effort</h2>
+                    <p>We want to expand our message to the community by partnering with individuals and institutions 
+                    that understand the importance of unplugging our minds from virtual reality.</p>
+                    <p>We are committed to donate a percentage of our sales for research, education, and
+                    development of programs that enable all of us to unplug. We worry about our physical health,
+                    lets pay attention to our mental health too.</p>
+                </div>
             </div>
-            <div class="jm-contenido p-r-0 p-l-0 scrollflow -slide-top -opacity">
-                <p>We are constantly looking for our followers to join our cause and participate. If you have any
-                suggestions or collaboration ideas, shoot us a message.</p>
+            <div class="jm-effort__left one">
+                <img src="<?php echo RUTA_IMG?>fondo/fondo_effort.png"/>
+            </div>
+        </div>
+        <div class="jm-about">
+            <div class="jm-about__left">
+                <div class="jm-about--contenido">
+                    <h2>About us</h2>
+                    <p>We are Benitan. We are the ones that choose to not let technology dictate our lives.</p>
+                    <p>At Benitan we have no founders, no CEO, no CMO, or C-whatever. We are a group of techies
+                    that love technology but understand the importance of setting it aside for a while and
+                    living the human experience.</p>
+                    <p>Let's be Human, The Benitan Group</p>
+                </div>
+            </div>
+            <div class="jm-about__right">
+                <img src="<?php echo RUTA_IMG?>fondo/fondo_about.png"/>
             </div>
         </div>
     </section>
-    <section class="jm-section p-t-20 p-b-20">
+    <section class="jm-section" id="contact">
         <div class="jm-container">
-            <div class="jm-contenido p-r-0 p-l-0">
-                <div class="jm-input">
-                    <label for="nameContact">Name (required)</label>
-                    <input type="text" class="form-control" id="nameContact">
-                </div>
-                <div class="jm-input">
-                    <label for="reachContact">How can we reach you? (required)</label>
-                    <input type="text" class="form-control" id="reachContact">
-                </div>
-                <div class="jm-input">
-                    <label for="messageContact">Message (required)</label>
-                    <textarea rows="5" type="text" class="form-control" id="messageContact"></textarea>
-                </div>
-                <div class="jm-input text-right">
-                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect jm-button" onclick="sendContact()">Send</button>
+            <div class="jm-title">
+                <h2>Contact us</h2>
+            </div>
+            <div class="jm-contact">
+                <p>We are constantly looking for our followers to <strong>join our cause and participate.</strong> If you have any
+                suggestions or collaboration ideas, <strong>shoot us a message.</strong></p>
+                <div class="jm-contenido row">
+                    <div class="col-sm-4">
+                        <div class="jm-input">
+                            <input type="text" class="form-control" id="nameContact" placeholder="Name">
+                        </div>
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="jm-input">
+                            <input type="text" class="form-control" id="reachContact" placeholder="How can we reach you?">
+                        </div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="jm-input">
+                            <textarea rows="5" type="text" class="form-control" id="messageContact" placeholder="Message"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 jm-action text-center">
+                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect jm-button" onclick="sendContact()">SEND</button>
+                    </div>
                 </div>
             </div>
         </div>

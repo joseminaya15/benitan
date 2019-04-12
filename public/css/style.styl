@@ -1,7 +1,7 @@
-$light     = 'FuturaLight'
-$regular   = 'FuturaRegular'
-$medium    = 'FuturaMedium'
-$bold      = 'FuturaBold'
+$light     = 'LatoLight'
+$regular   = 'LatoRegular'
+$medium    = 'LatoMedium'
+$bold      = 'LatoBold'
 $color     = #149DCC
 $default   = #61CE70
 flexCenter()
@@ -80,8 +80,10 @@ p
 label
 	font-weight 100
 strong
-	font-family $medium
+	font-family $bold
 	font-weight 100
+#story
+	height 600px
 .jm-section
 	position relative
 	padding 40px 20px
@@ -89,6 +91,8 @@ strong
 	background-color #FFFFFF
 .jm-grey
 	background-color #F8F8F8
+.jm-grey--oscure
+	background-color #333333
 .jm-input
 	text-align left
 	margin 10px 0
@@ -116,6 +120,9 @@ strong
 		line-height normal
 		font-family $bold
 		color #000000
+	&.white
+		h2
+			color #FFFFFF
 .jm-flex
 	flexCenter()
 	justify-content center
@@ -213,6 +220,8 @@ strong
 	margin auto
 .js-home
 	height 500px
+.js-story
+	height 600px
 .jm-pulsera	
 	height 260px
 .js-input
@@ -322,15 +331,24 @@ strong
 		font-family $regular
 		font-weight 100
 .jm-button
-	background-color $default !important
+	background-color transparent !important
+	border 1px solid #000000
+	width 100%
 	text-decoration none !important
 	text-transform none
-	font-size 16px
 	font-family $medium
-	color #FFFFFF !important
+	color #000000 !important
 	box-shadow none !important
+	height 30px
+	line-height normal
+	border-radius 25px
+	font-size 14px
+	padding 0 10px
+	width 100%
+	max-width 120px
 	&.jm-button--default
 		background-color transparent !important
+		color #FFFFFF !important
 		border 2px solid #FFFFFF
 		width 100%
 		max-width 200px
@@ -347,6 +365,7 @@ strong
 		margin-top 20px
 	&.jm-button--white
 		background-color transparent !important
+		color #FFFFFF !important
 		border 1px solid #ffffff
 		height 30px
 		line-height normal
@@ -391,14 +410,9 @@ strong
 	width 100%
 	height 500px
 	z-index -1
-	&.time
-		background url(../img/fondo/fondo_time.jpg) no-repeat center center
-	&.about
-		background url(../img/fondo/fondo_about.JPG) no-repeat center center
-	&.story1
-		background url(../img/fondo/fondo_story1.JPG) no-repeat top center
-	&.story2
-		background url(../img/fondo/fondo_story2.JPG) no-repeat bottom center
+	&.story
+		background url(../img/fondo/fondo_story.png) no-repeat center center
+		height 600px
 	&.pulsera
 		background url(../img/logo/benitan_pulsera.jpg) no-repeat center center
 		height 260px
@@ -427,11 +441,6 @@ strong
 	img 
 		max-width 250px
 		margin-bottom 20px
-	span 
-		font-size 20px
-		line-height 24px
-		display block
-		margin-top 10px
 .jm-subtitle
 	text-align center
 	width 100%
@@ -442,7 +451,7 @@ strong
 		line-height normal
 		font-family $light
 	strong
-		font-family $medium
+		font-family $bold
 .js-contenido
 	text-align center
 	color #FFFFFF
@@ -456,7 +465,7 @@ strong
 		line-height normal
 		font-family $light
 		strong 
-			font-family $medium
+			font-family $bold
 	p
 		font-size 32px
 		line-height 34px
@@ -543,14 +552,56 @@ strong
 			&>a
 				color #000000
 				font-family $medium
+.jm-belief
+	flexStart()
+	&.contrario
+		flexCenter()
+		.jm-belief__first
+			order 2
+		.jm-belief__second
+			order 1
+	.jm-belief__first
+		width 100%
+		max-width 470px
+		order 1
+	.jm-belief__second
+		width 100%
+		padding 50px
+		order 2
+		h2
+			font-size 60px
+			line-height normal
+			font-family $bold
+			margin 40px 0
+		p
+			font-size 24px
+			line-height normal
+			font-family $light
+			margin-bottom 30px
+.jm-contact
+	max-width 800px
+	margin auto
+	text-align center
+	p
+		font-size 24px
+		line-height 28px
+		font-family $light
+.jm-action
+	margin 20px 0
 footer
 	position relative
 	background-image url('../img/fondo/fondo_footer.png')
+	background-repeat no-repeat
 	color #FFFFFF
 	height 420px
-	padding 20px
+	padding 0
+	&.story
+		background-image url('../img/fondo/fondo_footer_story.png')
 	.jm-footer
 		height 100%
+		display -webkit-flex
+		display flex
+		flex-direction column
 		.jm-flex--end
 			flexEnd()
 			justify-content space-between
@@ -587,6 +638,142 @@ footer
 		.jm-copyright
 			padding 20px
 			text-align center
+.jm-design--contenido
+	p
+		color #ffffff
+		font-size 24px
+		line-height 28px
+		&.jm-contenedor
+			width 100%
+			max-width 920px
+			margin 50px auto
+	img 
+		margin 30px 0
+		&.benitan2
+			display none
+.jm-design
+	flexCenter()
+	width 100%
+	max-width 950px
+	margin 50px auto
+	.jm-design__right
+	.jm-design__left
+		width 100%
+		p
+			font-size 24px
+			line-height 28px
+			color #FFFFFF
+	.one
+		order 2
+	.two
+		text-align center
+		order 1
+		img
+			display inline-block
+			margin 10px 20px
+		&.benitan
+			img
+				max-width 80px
+		&.correa
+			img
+				max-width 35px
+				&.large
+					max-width 80px
+.jm-triangulo--home
+	background-color transparent
+	.jm-triangulo
+		width 100%
+		height 80px
+		background-color #FFFFFF
+		-webkit-clip-path polygon(100% 0, 0% 100%, 100% 100%);
+		clip-path polygon(100% 0, 0% 100%, 100% 100%);
+		margin-top -78px
+.jm-triangulo--design
+	background-color #F8F8F8
+	.jm-triangulo
+		width 100%
+		height 60px
+		background-color #333333
+		-webkit-clip-path polygon(50% 0, 0 100%, 100% 100%)
+		clip-path polygon(50% 0, 0 100%, 100% 100%)
+		margin-bottom -1px
+.jm-triangulo--collection
+	background-color #333333
+	.jm-triangulo
+		width 100%
+		height 80px
+		background-color #FFFFFF
+		-webkit-clip-path polygon(50% 0, 0 100%, 100% 100%)
+		clip-path polygon(50% 0, 0 100%, 100% 100%)
+		margin-bottom -1px
+.jm-about
+.jm-effort
+	flexCenter()
+	background-color #F8F8F8
+.jm-about__left
+.jm-about__right
+.jm-effort__left
+.jm-effort__right
+	width 100%
+.jm-about__left
+.jm-effort__right
+	h2
+		font-size 60px
+		line-height 60px
+		font-family $bold
+		margin 50px 0
+	p
+		font-size 24px
+		line-height 28px
+		font-family $light
+		margin-bottom 30px
+	.jm-effort--contenido
+		width 100%
+		max-width 500px
+		text-align left
+		margin auto
+	.jm-about--contenido
+		width 100%
+		max-width 500px
+		text-align right
+		margin auto
+.jm-effort__right
+	&.two
+		order 2
+.jm-effort__left
+	&.one
+		order 1
+/*STORY*/
+.jm-story
+	flexStart()
+	margin 20px 0
+	.jm-story__left
+		width 100%
+		max-width 650px
+		padding 20px 0
+		p
+			font-size 24px
+			line-height 28px
+			margin-bottom 30px
+			font-family $light
+	.jm-story__right
+		width 100%
+		text-align center
+		img 
+			max-width 400px
+.jm-title--story
+	width 100%
+	max-width 200px
+	background-color #000000
+	text-align center
+	padding 10px
+	margin 20px 0
+	h2
+		color #ffffff
+		font-family $bold
+		margin 0
+		font-size 60px
+		line-height normal
 /*MATERIAL DESIGN*/
 .mdl-card
 .mdl-card__supporting-text
@@ -653,4 +840,46 @@ footer
 		.jm-new__contenido
 			h2
 				font-size 20px
-			
+	.jm-belief
+		display block !important
+	.jm-story
+	.jm-effort
+	.jm-about
+		display block
+	.jm-effort__right
+	.jm-about__left
+		padding 20px
+		h2
+			text-align center
+		.jm-about--contenido
+			text-align left
+	.jm-design--contenido
+		text-align center
+		img 
+			&.benitan1
+				display none
+			&.benitan2
+				display block
+				max-width 85px
+				margin 10px auto
+	.jm-design
+		display block
+		text-align center
+		.jm-design__right
+			margin 30px 0
+		.two
+			img 
+				margin 10px 15px
+	.jm-belief 
+		.jm-belief__second
+			padding 20px
+			h2
+				text-align center
+	.jm-about__left
+	.jm-effort__right
+	.jm-title
+		h2
+			font-size 45px
+			line-height 48px
+	.jm-title--story
+		margin 10px auto
