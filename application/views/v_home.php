@@ -7,7 +7,7 @@
     <meta name="description"            content="Benitan">
     <meta name="keywords"               content="Benitan">
     <meta name="robots"                 content="Index,Follow">
-    <meta name="date"                   content="August 01, 2018"/>
+    <meta name="date"                   content="August 01, 2020"/>
     <meta name="language"               content="es">
     <meta name="theme-color"            content="#000000">
 	<title>Benitan</title>
@@ -32,7 +32,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand link" href="#home"><img src="<?php echo RUTA_IMG?>logo/benitan.png"><span>Benitan</span></a>
+            <a class="navbar-brand link" href="#home"><img src="<?php echo RUTA_IMG?>logo/benitan.gif"><span>benitan</span></a>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
@@ -47,7 +47,7 @@
         </div>
         </div>
     </nav>
-    <section id="home" class="jm-relative">
+    <section id="home" class="jm-relative jm-select--section">
         <div class="jm-fondo"></div>
         <div class="jm-container">
             <div class="js-home jm-flex start">
@@ -70,25 +70,25 @@
                 <div class="jm-grid-4">
                     <div class="jm-icon scrollflow -slide-top -opacity">
                         <div class="jm-img">
-                            <img src="<?php echo RUTA_IMG?>logo/card1.png"/>
+                            <img src="<?php echo RUTA_IMG?>logo/card1.gif"/>
                         </div>
                         <p><strong>25% | 1 out of 4</strong> car accidents phone related<p>
                     </div>
                     <div class="jm-icon scrollflow -slide-top -opacity">
                         <div class="jm-img">
-                            <img src="<?php echo RUTA_IMG?>logo/card2.png"/>
+                            <img src="<?php echo RUTA_IMG?>logo/card2.gif"/>
                         </div>
                         <p><strong>50 Times</strong> you’ve checked your phone today<p>
                     </div>
                     <div class="jm-icon scrollflow -slide-top -opacity">
                         <div class="jm-img">
-                            <img src="<?php echo RUTA_IMG?>logo/card3.png"/>
+                            <img src="<?php echo RUTA_IMG?>logo/card3.gif"/>
                         </div>
                         <p><strong>1460 Hours</strong> Spent on your phone per year<p>
                     </div>
                     <div class="jm-icon scrollflow -slide-top -opacity">
                         <div class="jm-img">
-                            <img src="<?php echo RUTA_IMG?>logo/card4.png"/>
+                            <img src="<?php echo RUTA_IMG?>logo/card4.gif"/>
                         </div>
                         <p>Too Many <strong>Missed Opportunies</strong><p>
                     </div>
@@ -96,7 +96,7 @@
             </div>
         </div>
     </section>
-    <section class="jm-section" id="news">
+    <section class="jm-section jm-select--section" id="news">
         <div class="jm-container">
             <div class="jm-grid-3">
                 <div class="jm-news scrollflow -slide-top -opacity">
@@ -129,7 +129,7 @@
             </div>
         </div>
     </section>
-    <section class="jm-section jm-grey" id="belief">
+    <section class="jm-section jm-grey jm-select--section" id="belief">
         <div class="jm-container">
             <div class="jm-belief">
                 <div class="jm-belief__second">
@@ -147,7 +147,10 @@
                 <div class="jm-belief__second">
                     <p>When you use a <strong>Benitan wrist piece</strong> you are committing yourself to lifestyle that causes your to look 
                     up from your 6-inch screen phone and embrace <strong>the beautiful world we live in.</strong></p>
-                    <p>Our purpose is to motivate others to commit to put their phone down for a few everyday and enjoy <strong>a blessing</strong>, never taken for granted.</p>
+                    <p>Our purpose is to motivate others to commit to put their phone down for a few everyday and enjoy <strong>life</strong></p>
+                    <div class="jm-action text-right">
+                        <a href="story" class="jm-button jm-button--black">LEARN MORE</a>
+                    </div>
                 </div>
                 <div class="jm-belief__first">
                     <img src="<?php echo RUTA_IMG?>logo/jt.png"/>
@@ -158,7 +161,7 @@
     <div class="jm-triangulo--design">
         <div class="jm-triangulo"></div>
     </div>
-    <section class="jm-section jm-grey--oscure" id="design">
+    <section class="jm-section jm-grey--oscure jm-select--section" id="design">
         <div class="jm-container">
             <div class="jm-title white">
                 <h2>Design</h2>
@@ -197,7 +200,7 @@
     <div class="jm-triangulo--collection">
         <div class="jm-triangulo"></div>
     </div>
-    <section class="jm-section" id="collection">
+    <section class="jm-section jm-select--section" id="collection">
         <div class="jm-container">
             <div class="jm-title">
                 <h2>Collection</h2>
@@ -206,26 +209,21 @@
             <div class="jm-contenido">
                 <div class="jm-grid-3">
                     <div class="jm-collection scrollflow -slide-top -opacity">
-                        <img src="<?php echo RUTA_IMG?>collection/collection1.png"/>
-                        <h2>SILVER | BLACK</h2>
-                        <p>$00.00</p>
+                        <img src="<?php echo RUTA_IMG?>collection/collection1.jpg"/>
+                        <h2>Fossil Gray</h2>
+                        <p>$30.00</p>
                     </div>
                     <div class="jm-collection scrollflow -slide-top -opacity">
-                        <img src="<?php echo RUTA_IMG?>collection/collection2.png"/>
-                        <h2>GOLDEN | PINK</h2>
-                        <p>$00.00</p>
-                    </div>
-                    <div class="jm-collection scrollflow -slide-top -opacity">
-                        <img src="<?php echo RUTA_IMG?>collection/collection3.png"/>
-                        <h2>GOLDEN | WHITE</h2>
-                        <p>$00.00</p>
+                        <img src="<?php echo RUTA_IMG?>collection/collection2.jpg"/>
+                        <h2>Rose Gold</h2>
+                        <p>$30.00</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="jm-section p-0" id="about">
-        <div class="jm-effort">
+    <section class="jm-section p-0">
+        <div class="jm-effort jm-select--section" id="effort">
             <div class="jm-effort__right two">
                 <div class="jm-effort--contenido">
                     <h2>Effort</h2>
@@ -240,7 +238,7 @@
                 <img src="<?php echo RUTA_IMG?>fondo/fondo_effort.png"/>
             </div>
         </div>
-        <div class="jm-about">
+        <div class="jm-about jm-select--section" id="about">
             <div class="jm-about__left">
                 <div class="jm-about--contenido">
                     <h2>About us</h2>
@@ -256,7 +254,7 @@
             </div>
         </div>
     </section>
-    <section class="jm-section" id="contact">
+    <section class="jm-section jm-select--section" id="contact">
         <div class="jm-container">
             <div class="jm-title">
                 <h2>Contact us</h2>
@@ -344,7 +342,7 @@
                 </div>
             </div>
             <div class="jm-copyright">
-                <p class="content">&copy; Copyright 2018 Benitan – All Rights Reserved</p>
+                <p class="content">&copy; Copyright 2020 Benitan – All Rights Reserved</p>
             </div>
         </div>
     </footer>

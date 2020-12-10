@@ -7,7 +7,7 @@
         <meta name="description"            content="Benitan">
         <meta name="keywords"               content="Benitan">
         <meta name="robots"                 content="Index,Follow">
-        <meta name="date"                   content="Febrero 15, 2018"/>
+        <meta name="date"                   content="Febrero 15, 2020"/>
         <meta name="language"               content="es">
         <meta name="theme-color"            content="#000000">
     	<title>Benitan</title>
@@ -25,8 +25,8 @@
     <body>
         <div class="js-header">
             <div class="js-header--left">
-                <img src="<?php echo RUTA_IMG?>logo/benitan.png">
-                <span>Benitan</span>
+                <img src="<?php echo RUTA_IMG?>logo/benitan.gif">
+                <span>benitan</span>
             </div>
         </div>
         <section class="js-section jm-height">

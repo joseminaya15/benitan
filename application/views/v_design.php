@@ -7,7 +7,7 @@
     <meta name="description"            content="Benitan">
     <meta name="keywords"               content="Benitan">
     <meta name="robots"                 content="Index,Follow">
-    <meta name="date"                   content="August 01, 2018"/>
+    <meta name="date"                   content="August 01, 2020"/>
     <meta name="language"               content="es">
     <meta name="theme-color"            content="#000000">
 	<title>Benitan</title>
@@ -32,7 +32,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="Home"><img src="<?php echo RUTA_IMG?>logo/benitan.png"><span>Benitan</span></a>
+            <a class="navbar-brand" href="Home"><img src="<?php echo RUTA_IMG?>logo/benitan.gif"><span>benitan</span></a>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
@@ -87,7 +87,7 @@
     </section>
     <footer>
         <div class="js-container text-center">
-            <p class="content">&copy; Copyright 2018 Benitan – All Rights Reserved</p>
+            <p class="content">&copy; Copyright 2020 Benitan – All Rights Reserved</p>
             <div class="jm-redes">
                 <ul>
                     <li><a href="https://web.facebook.com/benitanweb?_rdc=1&_rdr" target="_blank"><i class="fa fa-facebook"></i></a></li>
