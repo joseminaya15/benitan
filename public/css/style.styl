@@ -84,6 +84,32 @@ strong
 	font-weight 100
 #story
 	height 600px
+.m-location
+	position absolute
+	width 100%
+	max-width max-content
+	padding 5px
+	background-color rgba(255,255,255,0.8)
+	flexCenter()
+	&.home
+		left 50px
+		bottom 100px
+		max-width 200px
+	&.effort
+		left 30px
+		bottom 30px
+		max-width 110px
+	&.about
+		right 30px
+		bottom 30px
+		max-width 160px
+	img
+		max-width 10px
+		margin-right 5px
+	p
+		font-size 12px
+		font-family $bold
+		line-height normal
 .jm-section
 	position relative
 	padding 40px 20px
@@ -183,7 +209,7 @@ strong
 		span 
 			margin-left 5px
 			font-size 24px
-.js-header
+.jm-header
 	transitionAll()
 	position fixed
 	top 0
@@ -193,7 +219,7 @@ strong
 	color #FFFFFF
 	height 75px
 	background-color rgba(0, 0, 0, .4)
-	.js-header--container
+	.jm-header--container
 		flexCenter()
 		width 100%
 		max-width 1150px
@@ -202,12 +228,12 @@ strong
 	img
 		width 100%
 		max-width 200px
-	.js-header--left
+	.jm-header--left
 		flexCenter()
 		width 100%
 		max-width 300px
 		justify-content flex-start
-	.js-header--right
+	.jm-header--right
 		flexCenter()
 		width 100%
 		justify-content flex-end
@@ -218,13 +244,14 @@ strong
 	width 100%
 	max-width 1150px
 	margin auto
-.js-home
+.jm-home
 	height 500px
-.js-story
+	position relative
+.jm-story
 	height 600px
 .jm-pulsera	
 	height 260px
-.js-input
+.jm-input
 	padding 7px 20px
 	height 70px
 	margin 0
@@ -233,19 +260,19 @@ strong
 	margin-bottom -1px
 	color #333333
 	margin 5px 0
-	&.js-input--default
+	&.jm-input--default
 		width 100%
 		max-width 400px
 		margin 20px auto
-	&.js-date
+	&.jm-date
 		padding 5px 20px
-		.js-icon
+		.jm-icon
 			width 100%
 			max-width 36px
 			text-align center
-	&.js-file
+	&.jm-file
 		height 100%
-	&.js-radio
+	&.jm-radio
 		height 100%
 		.mdl-radio
 			width 100%
@@ -257,7 +284,7 @@ strong
 			.mdl-radio__ripple-container 
 				.mdl-ripple
 					background $default
-	&.js-select
+	&.jm-select
 		padding 0
 		.bootstrap-select
 			width 100% !important
@@ -301,8 +328,8 @@ strong
 		font-size 16px
 		&:focus
 			outline 0
-.js-select
-	&.js-standar
+.jm-select
+	&.jm-standar
 		margin 5px 0
 		.bootstrap-select
 			width 100% !important
@@ -311,13 +338,13 @@ strong
 				color #757575
 				height 46px
 				border-radius 0	
-.js-contact-label
+.jm-contact-label
 	flexCenter()
 	flex-wrap wrap
-	.js-input-label
+	.jm-input-label
 		width 100%
 		max-width 120px
-.js-label
+.jm-label
 	height 145px
 	margin 5px 0
 	span
@@ -395,7 +422,7 @@ strong
 	&.is-checked 
 		.mdl-radio__outer-circle
 			border 2px solid #4983B6
-.js-checkbox
+.jm-checkbox
 	.mdl-checkbox
 		max-width 250px
 	.mdl-checkbox__label
@@ -453,7 +480,7 @@ strong
 		font-family $light
 	strong
 		font-family $bold
-.js-contenido
+.jm-contenido
 	text-align center
 	color #FFFFFF
 	max-width 680px
@@ -716,6 +743,7 @@ footer
 .jm-effort__left
 .jm-effort__right
 	width 100%
+	position relative
 .jm-about__left
 .jm-effort__right
 	h2
@@ -814,14 +842,14 @@ footer
 		background-position left center
 		&.time
 			background-position left
-	.js-contenido
+	.jm-contenido
 		padding 20px
 		h2
 			font-size 28px
 			line-height 32px
-	.js-header
+	.jm-header
 		padding 5px 15px
-		.js-header--right
+		.jm-header--right
 			p
 				font-size 16px
 				line-height 16px

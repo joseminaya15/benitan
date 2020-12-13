@@ -1,7 +1,7 @@
-$light     = 'FuturaLight'
-$regular   = 'FuturaRegular'
-$medium    = 'FuturaMedium'
-$bold      = 'FuturaBold'
+$light     = 'LatoLight'
+$regular   = 'LatoRegular'
+$medium    = 'LatoMedium'
+$bold      = 'LatoBold'
 $color     = #149DCC
 $default   = #61CE70
 flexCenter()
@@ -34,35 +34,35 @@ h2
 	margin 20px 0
 label
 	font-weight 100
-.js-section
+.jm-section
 	position relative
 	padding 40px 20px
-	&.js-section--admin
+	&.jm-section--admin
 		margin-top 50px
-.js-white
+.jm-white
 	background-color #FFFFFF
-.js-title
+.jm-title
 	text-align center
 	font-size 32px
 	font-family $bold
 	margin 20px 0
 	&.white
 		color #FFFFFF
-.js-flex
+.jm-flex
 	flexCenter()
 	justify-content center
-.js-flex--start
+.jm-flex--start
 	flexStart()
 	justify-content center
-.js-height
+.jm-height
 	height 100vh
-.js-container
+.jm-container
 	transitionMaxWidth()
 	height 100%
 	width 100%
 	max-width 1150px
 	margin auto
-.js-header
+.jm-header
 	flexCenter()
 	position fixed
 	top 0
@@ -72,14 +72,14 @@ label
 	padding 10px 25px
 	color #FFFFFF
 	height initial
-	&.js-fixed
+	&.jm-fixed
 		background-color #E6E7E8
 		span
 			color #000000
 	img
 		width 100%
 		max-width 50px
-	.js-header--left
+	.jm-header--left
 		flexCenter()
 		width 100%
 		max-width 300px
@@ -93,9 +93,9 @@ label
 			max-width 40px
 		span
 			font-size 24px
-			margin-left 15px
+			margin-left 5px
 			font-family $bold
-	.js-header--right
+	.jm-header--right
 		flexCenter()
 		width 100%
 		justify-content flex-end
@@ -118,7 +118,7 @@ label
 			box-shadow none !important
 			line-height 24px
 			font-family $medium
-.js-login
+.jm-login
 	width 100%
 	max-width 400px
 	h2
@@ -127,10 +127,12 @@ label
 		font-family $regular
 		color #FFFFFF
 		text-align center
-	.js-button--login
+	.jm-button--login
+		background-color #000000 !important
+		color #FFFFFF !important
 		max-width 100%
-		margin 0
-	.js-radio
+		width 100%
+	.jm-radio
 		margin 20px 0
 		.mdl-checkbox
 			color #FFFFFF

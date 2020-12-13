@@ -50,9 +50,13 @@
     <section id="home" class="jm-relative jm-select--section">
         <div class="jm-fondo"></div>
         <div class="jm-container">
-            <div class="js-home jm-flex start">
-                <div class="js-contenido scrollflow -slide-top -opacity">
+            <div class="jm-home jm-flex start">
+                <div class="jm-contenido scrollflow -slide-top -opacity">
                     <h3>Your time is <strong>precious</strong></h3>
+                </div>
+                <div class="m-location home">
+                    <img src="<?php echo RUTA_IMG?>icons/icon-location.svg" />
+                    <p>SOMEWHERE IN THE SAHARA</p>
                 </div>
             </div>
         </div>
@@ -235,6 +239,10 @@
                 </div>
             </div>
             <div class="jm-effort__left one">
+                <div class="m-location effort">
+                    <img src="<?php echo RUTA_IMG?>icons/icon-location.svg" />
+                    <p>MANY HOMES</p>
+                </div>
                 <img src="<?php echo RUTA_IMG?>fondo/fondo_effort.png"/>
             </div>
         </div>
@@ -250,6 +258,10 @@
                 </div>
             </div>
             <div class="jm-about__right">
+                <div class="m-location about">
+                    <img src="<?php echo RUTA_IMG?>icons/icon-location.svg" />
+                    <p>GREAT WALL OF CHINA</p>
+                </div>
                 <img src="<?php echo RUTA_IMG?>fondo/fondo_about.png"/>
             </div>
         </div>

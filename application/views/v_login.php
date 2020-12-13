@@ -23,26 +23,26 @@
         <link rel="stylesheet"    href="<?php echo RUTA_CSS?>admin.css?v=<?php echo time();?>">
     </head>
     <body>
-        <div class="js-header">
-            <div class="js-header--left">
+        <div class="jm-header">
+            <div class="jm-header--left">
                 <img src="<?php echo RUTA_IMG?>logo/benitan.gif">
                 <span>benitan</span>
             </div>
         </div>
-        <section class="js-section jm-height">
+        <section class="jm-section jm-height">
             <div class="jm-fondo"></div>
-            <div class="js-container js-flex">
-                <div class="js-login">
+            <div class="jm-container jm-flex">
+                <div class="jm-login">
                     <h2>Acceso a la Herramienta</h2>
-                    <div class="col-xs-12 js-input m-0">
+                    <div class="col-xs-12 jm-input m-0">
                         <label for="usuario">Username</label>
                         <input type="text" id="usuario" onkeyup="verificarDatos(event);">
                     </div>
-                    <div class="col-xs-12 js-input m-0">
+                    <div class="col-xs-12 jm-input m-0">
                         <label for="password">Password</label>
                         <input type="password" id="password" onkeyup="verificarDatos(event);">
                     </div>
-                    <div class="col-xs-12 js-radio">
+                    <div class="col-xs-12 jm-radio">
                         <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="remember">
                             <input type="checkbox" id="remember" class="mdl-checkbox__input">
                             <span class="mdl-checkbox__label">Remember me</span>
