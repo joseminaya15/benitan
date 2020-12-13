@@ -25,17 +25,17 @@
         <link rel="stylesheet"    href="<?php echo RUTA_CSS?>admin.css?v=<?php echo time();?>">
     </head>
     <body>
-        <div class="js-header js-fixed">
-            <div class="js-header--left">
+        <div class="jm-header jm-fixed">
+            <div class="jm-header--left">
                 <img src="<?php echo RUTA_IMG?>logo/benitan.gif">
                 <span>benitan</span>
             </div>
-            <div class="js-header--right">
+            <div class="jm-header--right">
                 <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect button-logout" onclick="cerrarCesion()">Logout</button> 
             </div>
         </div>
-        <section class="js-section">
-            <div class="js-container m-t-50">
+        <section class="jm-section">
+            <div class="jm-container m-t-50">
                 <ul class="nav nav-tabs m-b-20 jm-tabs" role="tablist">
                     <li role="presentation" class="active"><a href="#contact" aria-controls="contact" role="tab" data-toggle="tab">Contact</a></li>
                     <li role="presentation"><a href="#shared" aria-controls="shared" role="tab" data-toggle="tab">Shared</a></li>
@@ -55,26 +55,6 @@
                                     </thead>
                                     <tbody id="tablecity">
                                         <?php echo $html ?>  
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                    <div role="tabpanel" class="tab-pane" id="shared">
-                        <div class="mdl-card">
-                            <div class="table-responsive">
-                                <table id="exampleShared" class="display nowrap table table-bordered table-hover dt-responsive" cellspacing="0" width="100%">
-                                    <thead>
-                                        <tr class="tr-header-reporte">
-                                            <th class="text-left">Name</th>
-                                            <th class="text-left">Location</th>
-                                            <th class="text-left">Social</th>
-                                            <th class="text-left">Message</th>
-                                            <th class="text-center">Registration date</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody id="tablecity">
-                                        <?php echo $html2 ?>  
                                     </tbody>
                                 </table>
                             </div>

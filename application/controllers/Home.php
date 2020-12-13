@@ -28,7 +28,7 @@ class Home extends CI_Controller {
 			$insertUserContact = array('name'     => $name,
 									   'reach'    => $reach,
 									   'message'  => $message,
-									   'fecha'    => $fecha);
+									   'date'     => $fecha);
 			$datoInsert  = $this->M_Datos->insertarContact($insertUserContact,'contact');
 			$data['msj']   = $datoInsert['msj'];
 			$data['error'] = $datoInsert['error'];

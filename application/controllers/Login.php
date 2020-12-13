@@ -23,7 +23,7 @@ class Login extends CI_Controller {
          try {
 			$usuario  = $this->input->post('usuario');
 			$password = $this->input->post('password');
-			if($usuario == 'eduardo' && $password == 'maniobras'){
+			if($usuario == 'danckers' && $password == 'b3n1t@n'){
 				$session = array('usuario' => $usuario);
 				$this->session->set_userdata($session);
 				$data['error'] = EXIT_SUCCESS;

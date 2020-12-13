@@ -276,17 +276,17 @@
                 suggestions or collaboration ideas, <strong>shoot us a message.</strong></p>
                 <div class="jm-contenido row">
                     <div class="col-sm-4">
-                        <div class="jm-input">
+                        <div class="m-input">
                             <input type="text" class="form-control" id="nameContact" placeholder="Name">
                         </div>
                     </div>
                     <div class="col-sm-8">
-                        <div class="jm-input">
+                        <div class="m-input">
                             <input type="text" class="form-control" id="reachContact" placeholder="How can we reach you?">
                         </div>
                     </div>
                     <div class="col-xs-12">
-                        <div class="jm-input">
+                        <div class="m-input">
                             <textarea rows="5" type="text" class="form-control" id="messageContact" placeholder="Message"></textarea>
                         </div>
                     </div>

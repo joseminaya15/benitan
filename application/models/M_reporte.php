@@ -10,9 +10,4 @@ class M_reporte extends  CI_Model{
         $result = $this->db->query($sql);
         return $result->result();
     }
-    function getDatosShared() {
-        $sql = "SELECT * FROM shared";
-        $result = $this->db->query($sql);
-        return $result->result();
-    }
 }
