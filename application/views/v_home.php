@@ -210,18 +210,18 @@
                 <h2>Collection</h2>
                 <p>The timepiece that doesn't tell time</p>
             </div>
-            <div class="jm-contenido">
-                <div class="jm-grid-3">
-                    <div class="jm-collection scrollflow -slide-top -opacity">
-                        <img src="<?php echo RUTA_IMG?>collection/collection1.jpg"/>
-                        <h2>Fossil Gray</h2>
-                        <p>$30.00</p>
-                    </div>
-                    <div class="jm-collection scrollflow -slide-top -opacity">
-                        <img src="<?php echo RUTA_IMG?>collection/collection2.jpg"/>
-                        <h2>Rose Gold</h2>
-                        <p>$30.00</p>
-                    </div>
+            <div class="jm-grid--collection">
+                <div class="jm-collection scrollflow -slide-top -opacity">
+                    <img src="<?php echo RUTA_IMG?>collection/collection1.jpg"/>
+                    <h2>Fossil Gray</h2>
+                    <p>$30.00</p>
+                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect jm-button" data-product="Fossil Gray" onclick="openReserved($(this))">RESERVE</button>
+                </div>
+                <div class="jm-collection scrollflow -slide-top -opacity">
+                    <img src="<?php echo RUTA_IMG?>collection/collection2.jpg"/>
+                    <h2>Rose Gold</h2>
+                    <p>$30.00</p>
+                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect jm-button" data-product="Rose Gold" onclick="openReserved($(this))">RESERVE</button>
                 </div>
             </div>
         </div>
@@ -297,43 +297,6 @@
             </div>
         </div>
     </section>
-    <!-- <section class="jm-section" id="shared">
-        <div class="jm-container">
-            <div class="jm-title">
-                <h2>Share with Us</h2>
-                <hr>
-            </div>
-            <div class="jm-contenido p-r-0 p-l-0 scrollflow -slide-top -opacity">
-                <p>If you want us to feature your picture of your adventure with your benitan bracelet, attach your
-                image below. If we use it on our site or social media, we’ll give you a shout out and photo credit.</p>
-            </div>
-        </div>
-    </section>
-    <section class="jm-section jm-grey p-t-20 p-b-20">
-        <div class="jm-container">
-            <div class="jm-contenido p-r-0 p-l-0">
-                <div class="jm-input">
-                    <label for="nameShared">Name (optional)</label>
-                    <input type="text" class="form-control" id="nameShared">
-                </div>
-                <div class="jm-input">
-                    <label for="locationShared">Location (required)</label>
-                    <input type="text" class="form-control" id="locationShared">
-                </div>
-                <div class="jm-input">
-                    <label for="socialShared">Social Media Handle (optional)</label>
-                    <input type="text" class="form-control" id="socialShared" placeholder="@">
-                </div>
-                <div class="jm-input">
-                    <label for="messageShared">Message (optional)</label>
-                    <textarea rows="5" type="text" class="form-control" id="messageShared"></textarea>
-                </div>
-                <div class="jm-input text-right">
-                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect jm-button" onclick="sendShared()">Send</button>
-                </div>
-            </div>
-        </div>
-    </section> -->
     <footer>
         <div class="jm-container jm-footer">
             <div class="jm-flex--end">
@@ -358,6 +321,37 @@
             </div>
         </div>
     </footer>
+
+    <div class="modal fade" id="ModalReserved" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <h2>Reserve now</h2>
+                </div>
+                <div class="modal-body">
+                    <div class="m-input">
+                        <input type="text" class="form-control" id="firstname" placeholder="First Name">
+                    </div>
+                    <div class="m-input">
+                        <input type="text" class="form-control" id="lastname" placeholder="Last Name">
+                    </div>
+                    <div class="m-input">
+                        <input type="text" class="form-control" id="email" placeholder="Email Address">
+                    </div>
+                    <div class="m-input">
+                        <input type="text" class="form-control" id="phone" placeholder="Phone">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect jm-button" onclick="sendReserved()">SEND</button>
+                </div>
+                <div class="modal-menu" data-dismiss="modal">
+                    <i class="mdi mdi-close"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
 	<script src="<?php echo RUTA_JS?>jquery-3.2.1.min.js?v=<?php echo time();?>"></script>
     <script src="<?php echo RUTA_JS?>jquery-1.11.2.min.js?v=<?php echo time();?>"></script>
     <script src="<?php echo RUTA_JS?>js-scroll-flow.js?v=<?php echo time();?>"></script>

@@ -38,26 +38,83 @@ class Home extends CI_Controller {
       	echo json_encode($data);
 	}
 
-	function registerShared(){
+	function registerReserved(){
 		$data['error'] = EXIT_ERROR;
       	$data['msj']   = null;
 		try {
-			$name             = $this->input->post('NameShared');
-			$location 		  = $this->input->post('LocationShared');
-			$social 		  = $this->input->post('SocialShared');
-			$message 		  = $this->input->post('MessageShared');
-			$fecha            = date('Y-m-d');
-			$insertUserShared = array('name'     => $name,
-									  'location' => $location,
-									  'social' 	 => $social,
-									  'message'  => $message,
-									  'fecha'    => $fecha);
-			$datoInsert  = $this->M_Datos->insertarShared($insertUserShared,'shared');
+			$product            = $this->input->post('Product');
+			$firstname          = $this->input->post('FirstName');
+			$lastname 		    = $this->input->post('LastName');
+			$email 		        = $this->input->post('Email');
+			$phone 		        = $this->input->post('Phone');
+			$fecha              = date('Y-m-d');
+			$insertUserReserved = array('firstname' => $firstname,
+									  	'lastname'  => $lastname,
+									  	'email' 	=> $email,
+									  	'phone'     => $phone,
+									  	'date'      => $fecha);
+			$datoInsert  = $this->M_Datos->insertarContact($insertUserReserved,'reserved');
+			$this->sendConfirmation($product,$firstname,$lastname,$email,$phone);
 			$data['msj']   = $datoInsert['msj'];
 			$data['error'] = $datoInsert['error'];
 		} catch(Exception $ex) {
 			$data['msj'] = $ex->getMessage();
 		}
       	echo json_encode($data);
+	}
+
+	function sendConfirmation($product,$firstname,$lastname,$email,$phone){
+		$data['error'] = EXIT_ERROR;
+		$data['msj']   = null;
+		try {  
+			$this->load->library("email");
+			$configGmail = array('protocol'  => 'smtp',
+			                     'smtp_host' => 'mail.iradianty.com',
+			                     'smtp_port' => 587,
+			                     'smtp_user' => 'info@iradianty.com',
+			                     'smtp_pass' => 'EduardoBenavides2019!',
+			                     'mailtype'  => 'html',
+			                     'charset'   => 'utf-8',
+			                     'newline'   => "\r\n");    
+			$this->email->initialize($configGmail);
+			$this->email->from('info@iradianty.com');
+			$this->email->to('time@benitan.com');
+			// $this->email->to('jose.minayac15@gmail.com');
+			$this->email->subject('Nueva Reserva - '.$product.'');
+			$texto = '<!DOCTYPE html>
+			                <html>
+			                    <body>
+			                        <table width="500" cellpadding="0" cellspacing="0" align="center" style="border: solid 1px #ccc;">
+			                            <tr>
+			                                <td>
+			                                    <table width="400" cellspacing="0" cellpadding="0" border="0" align="center" style="padding: 30px 10px">
+			                                        <tr>
+			                                            <td style="text-align: center;padding: 0;margin: 0;padding-bottom: 10px"><font style="font-family: arial;color: #000000;font-size: 18px;font-weight: 600">Nueva reserva - '.$product.'</font></td>
+													</tr>
+													<tr>
+														<td>First Name: '.$firstname.'</td>
+													</tr>
+													<tr>
+														<td>Last Name: '.$lastname.'</td>
+													</tr>
+													<tr>
+														<td>Email Address: '.$email.'</td>
+													</tr>
+													<tr>
+														<td>Phone: '.$phone.'</td>
+													</tr>
+			                                    </table>
+			                                </td>
+			                            </tr>
+			                        </table>
+			                    </body>
+			                </html>';
+			$this->email->message($texto);
+			$this->email->send();
+			$data['error'] = EXIT_SUCCESS;
+		}catch (Exception $e){
+			$data['msj'] = $e->getMessage();
+		}
+		return json_encode(array_map('utf8_encode', $data));
 	}
 }

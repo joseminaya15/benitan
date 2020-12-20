@@ -36,11 +36,11 @@
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-                <li><a class="link" href="#belief">BELIEF</a></li>
-                <li><a class="link" href="#design">DESIGN</a></li>
-                <li><a class="link" href="#collection">COLLECTION</a></li>
-                <li><a class="link" href="#effort">EFFORT</a></li>
-                <li><a class="link" href="#about">ABOUT US</a></li>
+                <li><a class="link" href="Home#belief">BELIEF</a></li>
+                <li><a class="link" href="Home#design">DESIGN</a></li>
+                <li><a class="link" href="Home#collection">COLLECTION</a></li>
+                <li><a class="link" href="Home#effort">EFFORT</a></li>
+                <li><a class="link" href="Home#about">ABOUT US</a></li>
                 <!-- <li><a class="link" href="#shared">Share with us</a></li> -->
                 <li><a class="link" href="#contact">CONTACT</a></li>
             </ul>

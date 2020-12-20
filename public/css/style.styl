@@ -198,8 +198,6 @@ strong
 				color #000000
 				font-size 20px
 				text-align center
-				&:hover
-					color #FFFFFF
 	.navbar-brand
 		flexCenter()
 		color #000000 !important
@@ -248,8 +246,6 @@ strong
 .jm-home
 	height 500px
 	position relative
-.jm-story
-	height 600px
 .jm-pulsera	
 	height 260px
 .jm-input
@@ -545,6 +541,11 @@ strong
 			padding-left 12px
 			height 60px
 			overflow hidden
+.jm-grid--collection
+	display grid
+	grid-template-columns repeat(auto-fit,minmax(300px,350px))
+	grid-gap 40px
+	justify-content center
 .jm-grid-2
 	display grid
 	grid-template-columns repeat(auto-fit,minmax(200px,1fr))
@@ -573,6 +574,13 @@ strong
 		p
 			font-size 20px
 			line-height normal
+.jm-collection
+	text-align center
+	h2
+	p
+		color #000000
+	p
+		margin-bottom 20px
 .jm-tabs
 	&>li
 		&>a
@@ -810,6 +818,19 @@ footer
 .mdl-card
 .mdl-card__supporting-text
 	width 100%
+.modal
+	.modal-dialog
+		.modal-header
+			h2
+				margin 10px 0
+				font-family $bold
+		.modal-footer
+			text-align center !important
+		.modal-menu
+			cursor pointer
+			position absolute
+			top 10px
+			right 10px
 /*SCROLL*/
 ::-webkit-scrollbar
 	width 5px

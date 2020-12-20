@@ -44,7 +44,7 @@ function sendContact(){
 		try {
 			data = JSON.parse(data);
 			if(data.error == 0){
-				$('.jm-input').find('.form-control').val('');
+				$('.m-input').find('.form-control').val('');
 				msj('success', data.msj);
         	}else{
         		msj('error', data.msj);
@@ -55,40 +55,49 @@ function sendContact(){
 		}
 	});
 }
-function sendShared(){
-	var nameShared     = $('#nameShared').val();
-	var locationShared = $('#locationShared').val();
-	var socialShared   = $('#socialShared').val();
-	var messageShared  = $('#messageShared').val();
-	if(nameShared == null || nameShared == '') {
-		msj('error', 'Name must be completed');
+const openReserved = (element) => {
+	const product = element.attr('data-product');
+	$('#ModalReserved').attr('data-product',product);
+	$('#ModalReserved').modal('show');
+}
+const sendReserved = () => {
+	const product    = $('#ModalReserved').attr('data-product');
+	const firstname  = $('#firstname').val();
+	const lastname   = $('#lastname').val();
+	const email      = $('#email').val();
+	const phone      = $('#phone').val();
+	console.log(product);
+	if(firstname == null || firstname == '') {
+		msj('error', 'First Name must be completed');
 		return;
 	}
-	if(locationShared == null || locationShared == '') {
-		msj('error', 'Location must be completed');
+	if(lastname == null || lastname == '') {
+		msj('error', 'Last Name must be completed');
 		return;
 	}
-	if(socialShared == null || socialShared == '') {
-		msj('error', 'Social must be completed');
+	if(email == null || email == '') {
+		msj('error', 'Email Address must be completed');
 		return;
 	}
-	if(messageShared == null || messageShared == '') {
-		msj('error', 'Message must be completed');
+	if(phone == null || phone == '') {
+		msj('error', 'Phone must be completed');
 		return;
 	}
 	$.ajax({
-		data : {NameShared	    : nameShared,
-			    LocationShared	: locationShared,
-				SocialShared 	: socialShared,
-				MessageShared 	: messageShared},
-		url  : 'home/registerShared',
+		data : {Product   : product,
+				FirstName : firstname,
+			    LastName  : lastname,
+				Email 	  : email,
+				Phone 	  : phone},
+		url  : 'home/registerReserved',
 		type : 'POST'
 	}).done(function(data){
 		try {
 			data = JSON.parse(data);
 			if(data.error == 0){
-				$('.jm-input').find('.form-control').val('');
-				msj('success', data.msj);
+				$('.m-input').find('.form-control').val('');
+				$('#ModalReserved').modal('hide');
+				msj('success', 'Successful reserve');
         	}else{
         		msj('error', data.msj);
         		return;
