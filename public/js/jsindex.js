@@ -18,25 +18,39 @@ $('a.link[href^="#"]').click(function(e) {
  		scrollTop : (y - 40)
  	}, 'slow');
 });
-function sendContact(){
+const validateEmail = (email) => {
+    const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(email);
+}
+const sendContact = () => {
 	var nameContact    = $('#nameContact').val();
-	var reachContact   = $('#reachContact').val();
+	var emailContact   = $('#emailContact').val();
+	var phoneContact   = $('#phoneContact').val();
 	var messageContact = $('#messageContact').val();
 	if(nameContact == null || nameContact == '') {
-		msj('error', 'Name must be completed');
+		$('#nameContact').parent().find('label').addClass('active');
+		$('#nameContact').parent().find('label').text('Name must be completed');
 		return;
 	}
-	if(reachContact == null || reachContact == '') {
-		msj('error', 'Reach must be completed');
+	if(emailContact == null || emailContact == '') {
+		$('#emailContact').parent().find('label').addClass('active');
+		$('#emailContact').parent().find('label').text('Email must be completed');
+		return;
+	}
+	if(!validateEmail(emailContact)){
+		$('#emailContact').parent().find('label').addClass('active');
+		$('#emailContact').parent().find('label').text('The mail format is not correct');
 		return;
 	}
 	if(messageContact == null || messageContact == '') {
-		msj('error', 'Message must be completed');
+		$('#messageContact').parent().find('label').addClass('active');
+		$('#messageContact').parent().find('label').text('Message must be completed');
 		return;
 	}
 	$.ajax({
 		data : {NameContact	    : nameContact,
-			    ReachContact	: reachContact,
+			    EmailContact	: emailContact,
+			    PhoneContact	: phoneContact,
 			    MessageContact 	: messageContact},
 		url  : 'home/registerContact',
 		type : 'POST'
@@ -45,6 +59,7 @@ function sendContact(){
 			data = JSON.parse(data);
 			if(data.error == 0){
 				$('.m-input').find('.form-control').val('');
+				$('.m-input').find('label').removeClass('active');
 				msj('success', data.msj);
         	}else{
         		msj('error', data.msj);
@@ -68,19 +83,23 @@ const sendReserved = () => {
 	const phone      = $('#phone').val();
 	console.log(product);
 	if(firstname == null || firstname == '') {
-		msj('error', 'First Name must be completed');
+		$('#firstname').parent().find('label').addClass('active');
+		$('#firstname').parent().find('label').text('First Name must be completed');
 		return;
 	}
 	if(lastname == null || lastname == '') {
-		msj('error', 'Last Name must be completed');
+		$('#lastname').parent().find('label').addClass('active');
+		$('#lastname').parent().find('label').text('Last Name must be completed');
 		return;
 	}
 	if(email == null || email == '') {
-		msj('error', 'Email Address must be completed');
+		$('#email').parent().find('label').addClass('active');
+		$('#email').parent().find('label').text('Email Address must be completed');
 		return;
 	}
-	if(phone == null || phone == '') {
-		msj('error', 'Phone must be completed');
+	if(!validateEmail(email)){
+		$('#email').parent().find('label').addClass('active');
+		$('#email').parent().find('label').text('The mail format is not correct');
 		return;
 	}
 	$.ajax({
@@ -96,6 +115,7 @@ const sendReserved = () => {
 			data = JSON.parse(data);
 			if(data.error == 0){
 				$('.m-input').find('.form-control').val('');
+				$('.m-input').find('label').removeClass('active');
 				$('#ModalReserved').modal('hide');
 				msj('success', 'Successful reserve');
         	}else{

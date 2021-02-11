@@ -21,7 +21,8 @@ class Admin extends CI_Controller {
             foreach ($datos as $key){
                 $html .= '<tr class="tr-cursor-pointer">
                             <td class="text-left">'.$key->name.'</td>
-                            <td class="text-left">'.$key->reach.'</td>
+                            <td class="text-left">'.$key->email.'</td>
+                            <td class="text-left">'.$key->phone.'</td>
                             <td class="text-left">'.$key->message.'</td>
                             <td class="text-center">'.$key->date.'</td>
                         </tr>';

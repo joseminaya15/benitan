@@ -41,7 +41,6 @@
                 <li><a class="link" href="#collection">COLLECTION</a></li>
                 <li><a class="link" href="#effort">EFFORT</a></li>
                 <li><a class="link" href="#about">ABOUT US</a></li>
-                <!-- <li><a class="link" href="#shared">Share with us</a></li> -->
                 <li><a class="link" href="#contact">CONTACT</a></li>
             </ul>
         </div>
@@ -105,29 +104,20 @@
             <div class="jm-grid-3">
                 <div class="jm-news scrollflow -slide-top -opacity">
                     <div class="jm-img">
-                        <img src="<?php echo RUTA_IMG?>news/new1.png"/>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/TQx49Yu-VTA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <div class="jm-new__contenido">
-                        <h2>The timepiece that doesn't tell time</h2>
-                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect jm-button jm-button--white">LEARN MORE</button>
+                        <h2>Benitan Founding Story</h2>
+                        <a href="https://youtu.be/TQx49Yu-VTA" target="_blank" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect jm-button jm-button--white">LEARN MORE</a>
                     </div>
                 </div>
                 <div class="jm-news scrollflow -slide-top -opacity">
                     <div class="jm-img">
-                        <img src="<?php echo RUTA_IMG?>news/new2.png"/>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/w0XrmAF-5kk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <div class="jm-new__contenido">
-                        <h2>The timepiece that doesn't tell time</h2>
-                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect jm-button jm-button--white">LEARN MORE</button>
-                    </div>
-                </div>
-                <div class="jm-news scrollflow -slide-top -opacity">
-                    <div class="jm-img">
-                        <img src="<?php echo RUTA_IMG?>news/new3.png"/>
-                    </div>
-                    <div class="jm-new__contenido">
-                        <h2>The timepiece that doesn't tell time</h2>
-                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect jm-button jm-button--white">LEARN MORE</button>
+                        <h2>Benitan Promo 1</h2>
+                        <a href="https://youtu.be/w0XrmAF-5kk" target="blank" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect jm-button jm-button--white">LEARN MORE</a>
                     </div>
                 </div>
             </div>
@@ -275,19 +265,27 @@
                 <p>We are constantly looking for our followers to <strong>join our cause and participate.</strong> If you have any
                 suggestions or collaboration ideas, <strong>shoot us a message.</strong></p>
                 <div class="jm-contenido row">
-                    <div class="col-sm-4">
+                    <div class="col-sm-12">
                         <div class="m-input">
-                            <input type="text" class="form-control" id="nameContact" placeholder="Name">
+                            <input type="text" class="form-control" id="nameContact" placeholder="Name*">
+                            <label>*Required</label>
                         </div>
                     </div>
-                    <div class="col-sm-8">
+                    <div class="col-sm-12">
                         <div class="m-input">
-                            <input type="text" class="form-control" id="reachContact" placeholder="How can we reach you?">
+                            <input type="text" class="form-control" id="emailContact" placeholder="Email*">
+                            <label>*Required</label>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="m-input">
+                            <input type="text" class="form-control" id="phoneContact" placeholder="Phone">
                         </div>
                     </div>
                     <div class="col-xs-12">
                         <div class="m-input">
-                            <textarea rows="5" type="text" class="form-control" id="messageContact" placeholder="Message"></textarea>
+                            <textarea rows="5" type="text" class="form-control" id="messageContact" placeholder="Message*"></textarea>
+                            <label>*Required</label>
                         </div>
                     </div>
                     <div class="col-xs-12 jm-action text-center">
@@ -330,13 +328,16 @@
                 </div>
                 <div class="modal-body">
                     <div class="m-input">
-                        <input type="text" class="form-control" id="firstname" placeholder="First Name">
+                        <input type="text" class="form-control" id="firstname" placeholder="First Name*">
+                        <label>*Required</label>
                     </div>
                     <div class="m-input">
-                        <input type="text" class="form-control" id="lastname" placeholder="Last Name">
+                        <input type="text" class="form-control" id="lastname" placeholder="Last Name*">
+                        <label>*Required</label>
                     </div>
                     <div class="m-input">
-                        <input type="text" class="form-control" id="email" placeholder="Email Address">
+                        <input type="text" class="form-control" id="email" placeholder="Email Address*">
+                        <label>*Required</label>
                     </div>
                     <div class="m-input">
                         <input type="text" class="form-control" id="phone" placeholder="Phone">

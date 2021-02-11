@@ -22,11 +22,13 @@ class Home extends CI_Controller {
       	$data['msj']   = null;
 		try {
 			$name              = $this->input->post('NameContact');
-			$reach 	           = $this->input->post('ReachContact');
+			$email 	           = $this->input->post('EmailContact');
+			$phone 	           = $this->input->post('PhoneContact');
 			$message           = $this->input->post('MessageContact');
 			$fecha             = date('Y-m-d');
 			$insertUserContact = array('name'     => $name,
-									   'reach'    => $reach,
+									   'email'    => $email,
+									   'phone'    => $phone,
 									   'message'  => $message,
 									   'date'     => $fecha);
 			$datoInsert  = $this->M_Datos->insertarContact($insertUserContact,'contact');

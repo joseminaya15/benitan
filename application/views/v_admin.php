@@ -48,7 +48,8 @@
                                     <thead>
                                         <tr class="tr-header-reporte">
                                             <th class="text-left">Name</th>
-                                            <th class="text-left">Reach</th>
+                                            <th class="text-left">Email</th>
+                                            <th class="text-left">Phone</th>
                                             <th class="text-left">Message</th>
                                             <th class="text-center">Registration date</th>
                                         </tr>
