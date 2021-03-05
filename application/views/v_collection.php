@@ -69,7 +69,7 @@
     </section>
     <footer>
         <div class="js-container text-center">
-            <p class="content">&copy; Copyright 2020 Benitan – All Rights Reserved</p>
+            <p class="content">&copy; Copyright 2021 Benitan – All Rights Reserved</p>
             <div class="jm-redes">
                 <ul>
                     <li><a href="https://web.facebook.com/benitanweb?_rdc=1&_rdr" target="_blank"><i class="fa fa-facebook"></i></a></li>

@@ -47,6 +47,7 @@ const sendContact = () => {
 		$('#messageContact').parent().find('label').text('Message must be completed');
 		return;
 	}
+	$('.m-loading').addClass('active');
 	$.ajax({
 		data : {NameContact	    : nameContact,
 			    EmailContact	: emailContact,
@@ -58,14 +59,17 @@ const sendContact = () => {
 		try {
 			data = JSON.parse(data);
 			if(data.error == 0){
+				$('.m-loading').removeClass('active');
 				$('.m-input').find('.form-control').val('');
 				$('.m-input').find('label').removeClass('active');
 				msj('success', data.msj);
         	}else{
+				$('.m-loading').removeClass('active');
         		msj('error', data.msj);
         		return;
         	}
 		} catch (err) {
+			$('.m-loading').removeClass('active');
 			msj('error', err.message);
 		}
 	});
@@ -102,6 +106,7 @@ const sendReserved = () => {
 		$('#email').parent().find('label').text('The mail format is not correct');
 		return;
 	}
+	$('.m-loading').addClass('active');
 	$.ajax({
 		data : {Product   : product,
 				FirstName : firstname,
@@ -114,15 +119,18 @@ const sendReserved = () => {
 		try {
 			data = JSON.parse(data);
 			if(data.error == 0){
+				$('.m-loading').removeClass('active');
 				$('.m-input').find('.form-control').val('');
 				$('.m-input').find('label').removeClass('active');
 				$('#ModalReserved').modal('hide');
 				msj('success', 'Successful reserve');
         	}else{
+				$('.m-loading').removeClass('active');
         		msj('error', data.msj);
         		return;
         	}
 		} catch (err) {
+			$('.m-loading').removeClass('active');
 			msj('error', err.message);
 		}
 	});
